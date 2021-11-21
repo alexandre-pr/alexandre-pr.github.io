@@ -1,23 +1,73 @@
 @font-face { font-family: Cabin-SemiBold; src: url('fonts/Cabin-SemiBold.ttf') format("opentype"); } 
+@font-face { font-family: Cabin-Bold; src: url('fonts/Cabin-Bold.ttf') format("opentype"); } 
 @font-face { font-family: SweetSansProMedium; src: url('fonts/SweetSansProMedium.otf') format("opentype"); } 
 @font-face { font-family: SweetSansProLight; src: url('fonts/SweetSansProLight.otf') format("opentype"); } 
   
 body {
 font-family: Arial, sans-serif;
 color: #ffffff;
-background-color: #3a3a3a }
+background-color: #3a3a3a;
+width: 100%;
+padding: 0px !important;
+margin: 0 !important;}
+
 h1 {
-font-family: Cabin-SemiBold, Helvetica, Arial, sans-serif; }
+font-family: Cabin-SemiBold, Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-size: 250%; }
 h2 {
-font-family: SweetSansProLight, Calibri, sans-serif; }
+color: #fba57e;
+font-family: SweetSansProLight, Calibri, sans-serif;
+font-weight: normal; }
 h3{
     font-family: Cabin-SemiBold, Helvetica, Arial, sans-serif;}
 
-banner {
-    font-family: Cabin-SemiBold, sans-serif;
+
+.header{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    line-height: 80%;
+}
+
+.header_banner {
+    font-family: Cabin-Bold, sans-serif;
     background-color: #46a6d6;
+    text-transform: uppercase;
     width: 100%;
-    display: block;
-    margin: 0 !important;
-    padding: 0px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 4em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 100%;
+}
+.header_banner li{
+    display: inline-block;
+    width: 25%;
+}
+
+.header_banner ol{
+    margin: 0;
+}
+
+.header_banner a:link{
+    color: rgb(230, 230, 230);
+    text-decoration: inherit;
+}
+
+.header_banner a:hover{
+    color: rgb(255,255,255)!important;
+    text-decoration: inherit;
+}
+
+.header_banner a:visited{
+    color: rgb(230, 230, 230);
+    text-decoration: inherit;
+}
+
+.header_banner a:active{
+    color: rgb(230, 230, 230);
+    text-decoration: inherit;
 }
