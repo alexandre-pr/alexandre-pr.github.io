@@ -1,0 +1,14 @@
+@font-face { font-family: Cabin-SemiBold; src: url('ressources/fonts/Cabin-SemiBold.ttf') format("opentype"); } 
+  @font-face { font-family: SweetSansProMedium; src: url('ressources/fonts/SweetSansProMedium.otf') format("opentype"); } 
+  @font-face { font-family: SweetSansProLight; src: url('ressources/fonts/SweetSansProLight.otf') format("opentype"); } 
+  
+  body {
+    font-family: SweetSansProMedium, Calibri, sans-serif;
+    color: #ffffff;
+    background-color: #3a3a3a }
+    h1 {
+    font-family: Cabin-SemiBold, Helvetica, Arial, sans-serif; }
+    h2 {
+    font-family: SweetSansProLight, Calibri, sans-serif; }
+    h3{
+      font-family: Cabin-SemiBold, Helvetica, Arial, sans-serif;}
