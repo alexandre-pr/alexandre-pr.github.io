@@ -4,12 +4,21 @@
 @font-face { font-family: SweetSansProLight; src: url('fonts/SweetSansProLight.otf') format("opentype"); } 
 @font-face { font-family: Raleway; src: url('fonts/Raleway-VariableFont_wght.ttf')} 
   
+:root{
+    --theme-gray: #3f3f3f;
+    --theme-white: #ffffff;
+    --theme-light-gray: rgb(230, 230, 230);
+    --theme-color1: #46a6d6;
+    --theme-color2: #fba57e;
+    --theme-color3: #ff2a6a;
+    --theme-color4: #29488b;
+}
 
 body {
 text-align: center;
 width: 100%;
 font-family: Raleway, Arial, sans-serif;
-background-color: #3f3f3f;
+background-color: var(--theme-gray);
 padding: 0 !important;
 margin: 0 !important;
 }
@@ -18,15 +27,16 @@ margin: 0 !important;
 /*White background*/
 .whitebackground{
     display: inline-block;
-    background-color: #ffffff;
-    color: #3f3f3f;
+    text-align: left;
+    background-color: var(--theme-white);
+    color: var(--theme-gray);
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
 }
 .whitebackground h1{
-    color: #3f3f3f;
+    color: var(--theme-gray);
     font: Cabin-Regular;
     font-weight:normal;
     font-size: xx-large;
@@ -46,6 +56,25 @@ margin: 0 !important;
 }
 
 
+.tag{
+    border-radius: 15pt;
+    display: inline;
+    width: auto;
+    background-color: var(--color);
+    color: var(--theme-white);
+    padding-right: 1em;
+    padding-left: 1em;
+    font: Cabin-Regular;
+}
+
+
+
+.block{
+    display: inline-block;
+}
+
+
+
 
 
 .width-full{
@@ -54,28 +83,32 @@ margin: 0 !important;
     margin-left: 0 !important;
 }
 
-.width-40em{
-    width: 40em;
+.width{
+    width: var(--width);
 }
 
 .width-half{
     width: 50%;
 }
 
+
+
+
+/* Header */
 .header{
     margin-top: 0em!important;
     margin-bottom: 0em!important;
     padding-top: 1em;
     padding-bottom: 1em;
-    color: #ffffff;
-    background-color: #3f3f3f;
+    color: var(--theme-white);
+    background-color: var(--theme-gray);
     margin-bottom: 4em;
     line-height: 80%;
 }
 
 .header h1 {
     margin:0;
-    color: #ffffff;
+    color: var(--theme-white);
     font-family: Cabin-Regular, Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 250%; }
@@ -85,22 +118,24 @@ margin: 0 !important;
         margin:0;
         padding-top:0;
         padding-bottom: 1em;
-        color: #fba57e;
+        color: var(--theme-color2);
         font-family: SweetSansProMedium, Calibri, sans-serif;
         font-weight: normal;
         font-size: 180%; }
     
 
 .header h3 {
-    color: #fba57e;
+    color: var(--theme-color2);
     font-family: SweetSansProLight, Calibri, sans-serif;
     font-weight: normal; }
 
 
 
+
+/* Header Banner */
 .header_banner {
     font-family: Cabin-Bold, sans-serif;
-    background-color: #46a6d6;
+    background-color: var(--theme-color1);
     text-transform: uppercase;
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -121,21 +156,24 @@ margin: 0 !important;
 }
 
 .header_banner a:link{
-    color: rgb(230, 230, 230);
+    color: var(--theme-light-gray);
     text-decoration: inherit;
 }
 
 .header_banner a:hover{
-    color: rgb(255,255,255)!important;
+    color: var(--theme-white)!important;
 }
 
 .header_banner a:visited{
-    color: rgb(230, 230, 230);
+    color: var(--theme-light-gray);
 }
 
 .header_banner a:active{
-    color: rgb(230, 230, 230);
+    color: var(--theme-light-gray);
 }
+
+
+
 
 #common_header{
     margin:0;
