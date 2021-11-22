@@ -30,8 +30,8 @@ h3{
 .header{
     margin-top: 0em!important;
     margin-bottom: 0em!important;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     width: 100%;
     color: #ffffff;
     background-color: #3f3f3f;
@@ -104,4 +104,13 @@ h3{
 .header_banner a:active{
     color: rgb(230, 230, 230);
     text-decoration: inherit;
+}
+
+.common_header{
+    padding-top: 4em;
+}
+
+#common_header{
+    margin:0;
+    padding:0;
 }
