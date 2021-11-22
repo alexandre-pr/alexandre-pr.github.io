@@ -49,7 +49,8 @@ h3{
 
 .header h2 {
         margin:0;
-        padding:0;
+        padding-top:0;
+        padding-bottom: 1em;
         color: #fba57e;
         font-family: SweetSansProMedium, Calibri, sans-serif;
         font-weight: normal;
@@ -106,11 +107,13 @@ h3{
     text-decoration: inherit;
 }
 
-.common_header{
+#common_header{
+    margin:0;
+    padding-bottom:0;
     padding-top: 4em;
 }
 
-#common_header{
+#loaded_header{
     margin:0;
     padding:0;
 }
