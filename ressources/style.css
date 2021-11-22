@@ -40,7 +40,23 @@ margin: 0 !important;
     font-family: Cabin-Regular;
     font-weight:normal;
     font-size: xx-large;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
+.whitebackground h2{
+    color: var(--theme-gray);
+    font-family: SweetSansProLight;
+    font-weight:normal;
+    font-size: 120%;
+}
+.whitebackground h3{
+    color: var(--theme-color1);
+    font-family: Cabin-Regular;
+    font-weight:normal;
+    font-size: 110%;
+}
+
+
 
 .whitebackground section{
     display: inline;
@@ -71,6 +87,7 @@ margin: 0 !important;
 
 .block{
     display: inline-block;
+    vertical-align: top;
     padding: 1em;
 }
 
