@@ -36,7 +36,6 @@ margin: 0 !important;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    line-height:20em;
 }
 .whitebackground h1{
     color: var(--theme-dark-gray);
@@ -63,6 +62,14 @@ margin: 0 !important;
     display: inline;
     text-align: left!important;
     line-height: 1.5em;
+}
+
+.whitebackground video{
+    display: block;
+}
+
+.whitebackground img{
+    display: block;
 }
 
 .whitebackground section hr.solid{
@@ -93,12 +100,16 @@ margin: 0 !important;
 
 .block{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 
-
+.group{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
 
 
 .width-full{
