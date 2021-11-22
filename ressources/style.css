@@ -64,6 +64,11 @@ margin: 0 !important;
     line-height: 1.5em;
 }
 
+.whitebackground .socials{
+    display: inline-block;
+    text-align: left!important;
+}
+
 .whitebackground video{
     display: block;
 }
@@ -77,6 +82,11 @@ margin: 0 !important;
     background-color: var(--theme-gray);
     border-width: 0;
     height: 2px;
+}
+
+.whitebackground a{
+    display: inline-block;
+    text-align: left;
 }
 
 .whitebackground a:link{
