@@ -37,7 +37,7 @@ margin: 0 !important;
 }
 .whitebackground h1{
     color: var(--theme-gray);
-    font: Cabin-Regular;
+    font-family: Cabin-Regular;
     font-weight:normal;
     font-size: xx-large;
 }
@@ -56,21 +56,22 @@ margin: 0 !important;
 }
 
 
-.tag{
-    border-radius: 15pt;
+.whitebackground .tag{
     display: inline;
+    border-radius: 15pt;
     width: auto;
     background-color: var(--color);
     color: var(--theme-white);
     padding-right: 1em;
     padding-left: 1em;
-    font: Cabin-Regular;
+    font-family: Cabin-Regular;
 }
 
 
 
 .block{
     display: inline-block;
+    padding: 1em;
 }
 
 
