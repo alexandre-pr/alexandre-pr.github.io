@@ -5,8 +5,9 @@
 @font-face { font-family: Raleway; src: url('fonts/Raleway-VariableFont_wght.ttf')} 
   
 :root{
-    --theme-gray: #3f3f3f;
+    --theme-dark-gray: #3f3f3f;
     --theme-white: #ffffff;
+    --theme-gray: #838383;
     --theme-light-gray: rgb(230, 230, 230);
     --theme-color1: #46a6d6;
     --theme-color2: #fba57e;
@@ -18,7 +19,7 @@ body {
 text-align: center;
 width: 100%;
 font-family: Raleway, Arial, sans-serif;
-background-color: var(--theme-gray);
+background-color: var(--theme-dark-gray);
 padding: 0 !important;
 margin: 0 !important;
 }
@@ -29,14 +30,15 @@ margin: 0 !important;
     display: inline-block;
     text-align: center;
     background-color: var(--theme-white);
-    color: var(--theme-gray);
+    color: var(--theme-dark-gray);
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    line-height:20em;
 }
 .whitebackground h1{
-    color: var(--theme-gray);
+    color: var(--theme-dark-gray);
     font-family: Cabin-Regular;
     font-weight:normal;
     font-size: xx-large;
@@ -44,7 +46,7 @@ margin: 0 !important;
     margin-bottom: 0.5em;
 }
 .whitebackground h2{
-    color: var(--theme-gray);
+    color: var(--theme-dark-gray);
     font-family: SweetSansProLight;
     font-weight:normal;
     font-size: 120%;
@@ -59,11 +61,12 @@ margin: 0 !important;
 .whitebackground section{
     display: inline;
     text-align: left!important;
+    line-height: 1.5em;
 }
 
 .whitebackground section hr.solid{
-    color: var(--theme-light-gray);
-    background-color: var(--theme-light-gray);
+    color: var(--theme-gray);
+    background-color: var(--theme-gray);
     border-width: 0;
     height: 2px;
 }
@@ -121,7 +124,7 @@ margin: 0 !important;
     padding-top: 1em;
     padding-bottom: 1em;
     color: var(--theme-white);
-    background-color: var(--theme-gray);
+    background-color: var(--theme-dark-gray);
     margin-bottom: 4em;
     line-height: 80%;
 }
