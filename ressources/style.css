@@ -14,6 +14,8 @@ padding: 0 !important;
 margin: 0 !important;
 }
 
+
+/*White background*/
 .whitebackground{
     display: inline-block;
     background-color: #ffffff;
@@ -39,6 +41,12 @@ margin: 0 !important;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
+.whitebackground a:link{
+    text-decoration: inherit;
+}
+
+
+
 
 .width-full{
     width:100%;
@@ -119,17 +127,14 @@ margin: 0 !important;
 
 .header_banner a:hover{
     color: rgb(255,255,255)!important;
-    text-decoration: inherit;
 }
 
 .header_banner a:visited{
     color: rgb(230, 230, 230);
-    text-decoration: inherit;
 }
 
 .header_banner a:active{
     color: rgb(230, 230, 230);
-    text-decoration: inherit;
 }
 
 #common_header{
