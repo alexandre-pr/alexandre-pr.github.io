@@ -27,7 +27,7 @@ margin: 0 !important;
 /*White background*/
 .whitebackground{
     display: inline-block;
-    text-align: left;
+    text-align: center;
     background-color: var(--theme-white);
     color: var(--theme-gray);
     padding-top: 1em;
@@ -56,17 +56,18 @@ margin: 0 !important;
     font-size: 110%;
 }
 
-
-
 .whitebackground section{
     display: inline;
-    text-align: left;
+    text-align: left!important;
 }
 
-.whitebackground p{
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+.whitebackground section hr.solid{
+    color: var(--theme-light-gray);
+    background-color: var(--theme-light-gray);
+    border-width: 0;
+    height: 2px;
 }
+
 .whitebackground a:link{
     text-decoration: inherit;
 }
@@ -74,6 +75,7 @@ margin: 0 !important;
 
 .whitebackground .tag{
     display: inline;
+    text-align: left;
     border-radius: 15pt;
     width: auto;
     background-color: var(--color);
