@@ -207,6 +207,7 @@ min-height: 100%;
     margin-right: 0 !important;
     margin-left: 0 !important;
     margin-top: 4em;
+    padding-bottom: 0;
     text-align: center;
     font-weight: bold;
     font-size: 100%;
@@ -216,6 +217,7 @@ min-height: 100%;
 .header_banner ul{
     list-style: none;
     padding:0;
+    margin:0;
     overflow: hidden;
     min-height: 100%;
     display: flex;
