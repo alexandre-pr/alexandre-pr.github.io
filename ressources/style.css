@@ -16,6 +16,10 @@
     --theme-color5: #3f3f3f;
 }
 
+html{
+    height:100%
+}
+
 body {
 text-align: center;
 width: 100%;
@@ -23,6 +27,7 @@ font-family: Raleway, Arial, sans-serif;
 background-color: var(--theme-dark-gray);
 padding: 0 !important;
 margin: 0 !important;
+min-height: 100%;
 }
 
 
@@ -167,6 +172,7 @@ margin: 0 !important;
     background-color: var(--theme-dark-gray);
     margin-bottom: 4em;
     line-height: 80%;
+    min-height: 30%;
 }
 
 .header h1 {
@@ -193,8 +199,6 @@ margin: 0 !important;
     font-weight: normal; }
 
 
-
-
 /* Header Banner */
 .header_banner {
     font-family: Cabin-Bold, sans-serif;
@@ -204,18 +208,39 @@ margin: 0 !important;
     margin-left: 0 !important;
     margin-top: 4em;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding:1em;
     font-weight: bold;
     font-size: 100%;
-}
-.header_banner li{
-    display: inline-block;
-    width: 25%;
+    min-height: 10%;
 }
 
-.header_banner ol{
-    margin: 0;
+.header_banner ul{
+    list-style: none;
+    margin:0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_banner ul li{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    min-height: 100%;
+    border-right:2px solid var(--theme-light-gray);
+    border-left:2px solid var(--theme-light-gray);
+}
+
+ul li:first-child {
+    border-left:4px solid var(--theme-light-gray)!important;
+}
+
+ul li:last-child {
+    border-right:4px solid var(--theme-light-gray)!important;
+}
+
+.header_banner a{
+    display: block;
 }
 
 .header_banner a:link{
@@ -225,6 +250,7 @@ margin: 0 !important;
 
 .header_banner a:hover{
     color: var(--theme-white)!important;
+    background-color: var(--theme-light-gray)!important;
 }
 
 .header_banner a:visited{
@@ -236,12 +262,21 @@ margin: 0 !important;
 }
 
 
+.button{
+    display: inline-block;
+    padding-top:1.5em;
+    padding-bottom: 1.5em;
+    vertical-align: middle;
+}
+
+
 
 
 #common_header{
     margin:0;
     padding-bottom:0;
     padding-top: 4em;
+    min-height: 30%;
 }
 
 #loaded_header{
