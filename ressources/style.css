@@ -162,7 +162,7 @@ margin: 0 !important;
     margin-top: 0em!important;
     margin-bottom: 0em!important;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0em;
     color: var(--theme-white);
     background-color: var(--theme-dark-gray);
     margin-bottom: 4em;
