@@ -18,14 +18,14 @@
 
 html{
     height:100%;
-    width:100%;
-    margin: 0, !important;;
-    padding: 0, !important;
+    min-width:100vh!important;
+    margin: 0!important;;
+    padding: 0!important;
 }
 
 body {
 text-align: center;
-width: 100%;
+min-width: 100vh!important;
 font-family: Raleway, Arial, sans-serif;
 background-color: var(--theme-dark-gray);
 padding: 0 !important;
