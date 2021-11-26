@@ -289,9 +289,7 @@ min-height: 100%;
     padding:0;
 }
 
-#common_footer{
+#contact{
     display: block;
-    margin-top: 4em;
-    margin-bottom: 4em;
-    padding-bottom: 0em;
+    padding:1em;
 }
