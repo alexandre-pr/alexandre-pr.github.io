@@ -304,6 +304,10 @@ min-height: 100%;
     padding:0;
 }
 
+#about-me p{
+    text-align: justify;
+}
+
 .socials{
     display: inline-block;
     width:2em;
