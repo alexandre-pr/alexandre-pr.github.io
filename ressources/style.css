@@ -42,8 +42,10 @@ min-height: 100%;
     color: var(--theme-dark-gray);
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: 0em;
-    padding-right: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .whitebackground h1{
     color: var(--theme-dark-gray);
@@ -131,7 +133,8 @@ min-height: 100%;
     display: inline-block;
     vertical-align: middle;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-top:1em;
+    margin-bottom: 1em;
 }
 
 
@@ -148,6 +151,8 @@ min-height: 100%;
     width:100%;
     margin-right: 0 !important;
     margin-left: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .width{
@@ -291,5 +296,15 @@ min-height: 100%;
 
 #contact{
     display: block;
-    padding:1em;
+    padding:0;
+}
+
+#about-me{
+    display: block;
+    padding:0;
+}
+
+.socials{
+    display: inline-block;
+    width:2em;
 }
