@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexandre Pérot Portfolio</title>
+        <link type="text/css" rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" type='text/css'>
+        
+        <!-- Fonts -->
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900|Roboto:300,900&display=swap">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+            $("#loaded_header").load("header.html"); 
+            $("#loaded_footer").load("footer.html"); 
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <div id="loaded_header"></div>
+
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                The title <strong>of my project</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
+            <img src="ressources/images/Amon/amon1.png" alt="" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.</p>
+            <img src="ressources/images/Amon/amon2.png">
+        </div>
+        
+
+        <div id="loaded_footer"></div>
+
+        <script src="js/index.js"></script>
+
+    </body>
+
+</html>

@@ -5,7 +5,7 @@
 @font-face { font-family: Raleway; src: url('fonts/Raleway-VariableFont_wght.ttf')} 
   
 :root{
-    --theme-dark-gray: #3f3f3f;
+    --theme-dark-gray: #222222;
     --theme-white: #ffffff;
     --theme-gray: #838383;
     --theme-light-gray: rgb(230, 230, 230);

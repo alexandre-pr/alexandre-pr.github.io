@@ -1,25 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<link rel="stylesheet" href="ressources/style.css">
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alexandre Pérot Portfolio</title>
+        <link type="text/css" rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" type='text/css'>
+        
+        <!-- Fonts -->
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro:300,900|Roboto:300,900&display=swap">
+        
+        <link rel="stylesheet" href="css/style.css">
 
+    </head>
 
+    <body>
+        <header>
+            <div class="logos-header">
+                <ul class="logos-header__list">
+                    <li class="logos-header__item">
+                        <img src="ressources/images/Logos/Polytechnique.svg" alt="Logo polytechnique"/>
+                    </li>
 
-<!-- Contenu principal -->
-<div class="header width-full">
-    <div id="common_header">
-        <center><h1>Alexandre Pérot</h1></center>
-        <center><h3>Portfolio</h3></center>
-        <div class="header_banner width-full">
-            <ul>
-                <li><a href=index.html>
-                    <div class="button">About me</div></a>
-                    </li> 
-                <li><a href=dev.html><div class="button">Game Dev – Computer Science</div></a>
+                    <li class="logos_item">
+                        <img src="ressources/images/Logos/Cnam.svg" alt="Logo cnam"/>
                     </li>
-                <li><a href=3d.html><div class="button">3D Art</div></a>
+
+                    <li class="logos_item">
+                        <img src="ressources/images/Logos/Gobelins.svg" alt="Logo gobelins"/>
                     </li>
-                <li><a href=art.html><div class="button">Other Art</div></a>
-                    </li>
-            </ul>
-        </div>
-    </div>
-</div>
+                </ul>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skill</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <script src="js/header.js"></script>
+    </body>
+</html>
