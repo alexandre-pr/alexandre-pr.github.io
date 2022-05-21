@@ -141,7 +141,7 @@ h3{
 /* Header */
 
 header{
-    color: var(--clr-accent);
+    color: var(--clr-light);
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -149,6 +149,7 @@ header{
     width: 100%;
     position: fixed;
 }
+
 
 .logos-header__list{
     list-style: none;
@@ -164,7 +165,8 @@ header{
 
 .logos-header__img {
     min-width: 60px;
-    filter: invert(53%) sepia(29%) saturate(784%) hue-rotate(316deg) brightness(114%) contrast(85%);
+    filter: invert();
+    
 }
 
 .logos-header__img--polytechnique{
@@ -232,6 +234,13 @@ header{
 }
 
 
+.light-background .nav{
+    color: var(--clr-accent);
+}
+
+.light-background .logos-header__img{
+    filter: invert(53%) sepia(29%) saturate(784%) hue-rotate(316deg) brightness(114%) contrast(85%);
+}
 
 
 @media (min-width: 800px){
@@ -264,6 +273,10 @@ header{
 
     .nav__link:hover{
         color:var(--clr-accent-light);
+    }
+
+    .light-background .nav__link:hover{
+        color:var(--clr-accent);
     }
 }
 
