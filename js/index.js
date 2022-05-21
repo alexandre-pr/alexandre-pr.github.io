@@ -13,7 +13,7 @@ const headerBlock = document.getElementsByTagName('header')[0]
 window.onscroll = function(){
     var top = window.scrollY;
     console.log('Top: ' + top);
-    if((top - headerBlock.innerHeight > aboutBlock.offsetTop && top<skillsBlock.offsetTop)||(top>educationBlock.offsetTop)){
+    if((top - headerBlock.offsetHeight > aboutBlock.offsetTop && top<skillsBlock.offsetTop)||(top>educationBlock.offsetTop)){
         document.body.classList.add('light-background');
     } else {
         document.body.classList.remove('light-background');
