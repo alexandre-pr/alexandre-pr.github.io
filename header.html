@@ -9,7 +9,7 @@
         
         <!-- Fonts -->
         <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro:300,900|Roboto:300,900&display=swap">
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900|Source+Code+Pro:300,900&display=swap">
         
         <link rel="stylesheet" href="css/style.css">
 
@@ -23,17 +23,25 @@
                         <img src="ressources/images/Logos/Polytechnique.svg" alt="Logo polytechnique" class="logos-header__img  logos-header__img--polytechnique"/>
                     </li>
 
-                    <li class="logos_item">
+                    <li class="logos-header__item">
                         <img src="ressources/images/Logos/Cnam_black.svg" alt="Logo cnam" class="logos-header__img  logos-header__img--cnam"/>
                     </li>
 
-                    <li class="logos_item">
+                    <li class="logos-header__item">
                         <img src="ressources/images/Logos/Gobelins_black.svg" alt="Logo gobelins" class="logos-header__img  logos-header__img--gobelins"/>
                     </li>
                 </ul>
             </div>
             
+            
+
             <nav class="nav">
+                <div class="nav__toggle">
+                    <button class="nav-toggle" aria-label="nav toggle button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
@@ -44,6 +52,8 @@
                     <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="nav__exit-background"></div>
         </header>
         
         <script src="js/header.js"></script>
