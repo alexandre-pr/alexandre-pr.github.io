@@ -438,6 +438,17 @@ header{
 }
 
 
+/* Experience */
+
+.experience__logos img{
+    width: 200px;
+}
+
+.experience__date__logo,
+.experience__location__logo{
+    color: var(--clr-accent)
+}
+
 
 
 
