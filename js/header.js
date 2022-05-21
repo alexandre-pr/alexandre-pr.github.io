@@ -14,30 +14,15 @@ navLinks.forEach(link => {
 
 const aboutBlock = document.getElementById('about')
 
-function setHeader () {
-    const scrollPoint = window.pageYOffset + headerHeight
-  
-    let blockPoint = 61 - (scrollPoint - secondBlock.offsetTop)
-    if (blockPoint <= 0) { blockPoint = 0 }
-  
-    if (scrollPoint > secondBlock.offsetTop) {
-      header[0].style = `max-height: ${blockPoint}px;`
-    } else {
-      header[0].style = `max-height: ${headerHeight}px;`
-    }
-    window.requestAnimationFrame(setHeader)
-  }
 
 window.onscroll = function(){
     var top = window.scrollY;
     console.log('Top: ' + top);
             var header = document.getElementsByTagName('header');
             var offset = header.innerHeight; //changed offset to be dynamic, so it works on mobile screens.
-    if(top > offset){
-        header[0].classList.remove('top');
-        header[0].classList.add('scrolled');
+    if(top > aboutBlock.offsetTop){
+        document.body.classList.add('light-background');
     } else {
-                header[0].classList.remove('scrolled');
-                header[0].classList.add('top');
+        document.body.classList.remove('light-background');
             }
 };
