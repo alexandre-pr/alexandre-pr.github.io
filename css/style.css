@@ -148,6 +148,8 @@ header{
     padding: 0;
     width: 100%;
     position: fixed;
+
+    transition: color 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
 
@@ -166,7 +168,7 @@ header{
 .logos-header__img {
     min-width: 60px;
     filter: invert();
-    
+    transition: filter 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .logos-header__img--polytechnique{
@@ -176,7 +178,7 @@ header{
 .nav{
     font-size: var(--fs-h3);
     padding: 0;
-    margin: 0;
+    margin: 1em 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -234,7 +236,7 @@ header{
 }
 
 
-.light-background .nav{
+.light-background header{
     color: var(--clr-accent);
 }
 
@@ -246,6 +248,7 @@ header{
 @media (min-width: 800px){
     .nav{
         font-size: var(--fs-body);
+        margin: 0.25em 0 0;
     }
 
     .nav__toggle{
