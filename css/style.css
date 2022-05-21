@@ -143,6 +143,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    position: fixed;
 }
 
 .logos-header__img {
@@ -152,7 +153,6 @@ header{
 }
 
 .nav{
-    position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
     top: 0;
@@ -168,7 +168,8 @@ header{
 .nav__list{
     list-style: none;
     display: flex;
-    flex-direction: column;
+
+    flex-direction: row;
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
@@ -244,6 +245,14 @@ header{
 .hamburger::before {top: 6px}
 .hamburger::after{bottom: 6px}
 
+
+/* Home */
+.home{
+    position: relative;
+    background-color: var(--clr-dark);
+    background-image: url(../ressources/images/Games/Amon/home__amon.png);
+    background-size: cover;
+}
 
 /* Intro */
 
@@ -347,6 +356,9 @@ header{
         margin-left: 2em;
     }
 }
+
+
+
 
 /* About me */
 
