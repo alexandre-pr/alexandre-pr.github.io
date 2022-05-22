@@ -136,18 +136,22 @@
         <!-- About me --> 
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">About me</h2>
-            <p class="section__subsubtitle section__subsubtitle--about">Alexandre Pérot</p>
 
             <div class="about-me__body">
                 <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.</p>
                 <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.</p>
             </div>
 
-            <img src="ressources/images/Random/about__portrait.png" alt="A picture of me" class="about-me__img">
-
-            <a href="#skills" class="btn btn--about">Skills</a>
-            <a href="#education" class="btn btn--about">Education</a>
-            <a href="#experience" class="btn btn--about">Experience</a>
+            <div class="about-me__img-block">
+                <img src="ressources/images/Random/about__portrait.png" alt="A picture of me" class="about-me__img">
+                <p class="section__subsubtitle section__subsubtitle--about">Alexandre Pérot</p>
+            </div>
+            
+            <div class="about-me__buttons">
+                <a href="#skills" class="btn btn--about">Skills</a>
+                <a href="#education" class="btn btn--about">Education</a>
+                <a href="#experience" class="btn btn--about">Experience</a>
+            </div>
         </section>
 
 
@@ -155,26 +159,21 @@
         <section class="my-skills" id="skills">
             <h2 class="section__title section__title--skills">Skills</h2>
             <div class="skills">
-                <div class="skill">
-                    <img src="ressources/images/Logos/3D.svg" alt="Logo 3D"/>
-                    <h3 class="section__subtitle section__subtitle--skills">3D Art <br> Technical Art</h3>
-                    <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                    </p>
-                </div> <!-- / service -->
+                <img src="ressources/images/Logos/3D.svg" alt="Logo 3D" class="skill__img skill__img--1"/>
+                <h3 class="section__subtitle section__subtitle--skills skill__title--1">3D Art <br> Technical Art</h3>
+                <p class="skill__body--1">Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. 
+                </p> <!-- / service -->
 
-                <div class="skill">
-                    <img src="ressources/images/Logos/draw.svg" alt="Logo Graphic tablet"/>
-                    <h3 class="section__subtitle section__subtitle--skills">Concept Art <br> Illustration</h3>
-                    <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                    </p>
-                </div> <!-- / service -->
+                
+                <img src="ressources/images/Logos/draw.svg" alt="Logo Graphic tablet" class="skill__img skill__img--2"/>
+                <h3 class="section__subtitle section__subtitle--skills skill__title--2">Concept Art <br> Illustration</h3>
+                <p class="skill__body--2">Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. 
+                </p> <!-- / service -->
 
-                <div class="skill">
-                    <img src="ressources/images/Logos/Code.svg" alt="Logo computer programming"/>
-                    <h3 class="section__subtitle section__subtitle--skills">Game programming</h3>
-                    <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                    </p>
-                </div> <!-- / service -->
+                <img src="ressources/images/Logos/Code.svg" alt="Logo computer programming" class="skill__img skill__img--3"/>
+                <h3 class="section__subtitle section__subtitle--skills skill__title--3">Game programming</h3>
+                <p class="skill__body--3">Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur.  
+                </p> <!-- / service -->
 
             </div> <!-- / services-->
 
@@ -189,10 +188,10 @@
                 <div class="education">
                     <div class="education__logos">
                         <img src="ressources/images/Logos/Cnam.svg" alt="Logo Cnam"/> 
-                    </div>
-                    <div class="education__description">
+                    </div><div class="education__title">
                         <h2>Master's degree, Games and interactive digital media</h2>
                         <h3>Cnam-Enjmin</h3>
+                        </div>
                         <div class="education__date">
                             <i class="fa-solid fa-calendar-days education__date__logo"></i>
                             <p>2022-2023</p>
@@ -201,19 +200,20 @@
                             <i class="fa-solid fa-location-dot education__location__logo"></i>
                             <p>Angoulême, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
+                        <div class="education__body">
+                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. 
                         </p>
-                    </div>
+                        </div>
                 </div> <!-- / service -->
 
                 <div class="education">
                     <div class="education__logos">
                         <img src="ressources/images/Logos/Gobelins.svg" alt="Logo Gobelins"/> 
                         <img src="ressources/images/Logos/Cnam.svg" alt="Logo Cnam"/> 
-                    </div>
-                    <div class="education__description">
-                        <h2>Specialized master's degree, Interactive Digital Experience Design</h2>
-                        <h3>Gobelins, Cnam-Enjmin</h3>
+                    </div><div class="education__title">
+                            <h2>Specialized master's degree, Interactive Digital Experience Design</h2>
+                            <h3>Gobelins, Cnam-Enjmin</h3>
+                        </div>
                         <div class="education__date">
                             <i class="fa-solid fa-calendar-days education__date__logo"></i>
                             <p>2021-2022</p>
@@ -222,18 +222,19 @@
                             <i class="fa-solid fa-location-dot education__location__logo"></i>
                             <p>Paris, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
-                    </div>
-                </div> <!-- / service -->
+                        <div class="education__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. 
+                            </p>
+                    </div></div>  <!-- / service -->
 
                 <div class="education">
                     <div class="education__logos">
                         <img src="ressources/images/Logos/Polytechnique.svg" alt="Logo Polytechnique"/> 
                     </div>
-                    <div class="education__description">
+                        <div class="education__title">
                         <h2>Engineering degree (master), A.I and Computer graphics</h2>
                         <h3>Ecole polytechnique</h3>
+                        </div>
                         <div class="education__date">
                             <i class="fa-solid fa-calendar-days education__date__logo"></i>
                             <p>2018-2023</p>
@@ -242,18 +243,20 @@
                             <i class="fa-solid fa-location-dot education__location__logo"></i>
                             <p>Palaiseau, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
-                    </div>
+                        <div class="education__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. 
+                            </p>
+                        </div>
                 </div> <!-- / service -->
 
                 <div class="education">
-                    <div class="education__logos">
+                    <div class="education__logos education__logos--lycee-parc">
                         <img src="ressources/images/Logos/LycéeParc.svg" alt="Logo Parc"/> 
                     </div>
-                    <div class="education__description">
+                        <div class="education__title">
                         <h2>Intensive scientific training for competitive entry to top tier engineering schools</h2>
                         <h3>Lycée du Parc</h3>
+                        </div>
                         <div class="education__date">
                             <i class="fa-solid fa-calendar-days education__date__logo"></i>
                             <p>2016-2018</p>
@@ -262,8 +265,9 @@
                             <i class="fa-solid fa-location-dot education__location__logo"></i>
                             <p>Lyon, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
+                        <div class="education__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. 
+                            </p>
                     </div>
                 </div> <!-- / service -->
 
@@ -282,9 +286,10 @@
                     <div class="experience__logos">
                         <img src="ressources/images/Logos/innerspace.png" alt="Logo Innerspace"/> 
                     </div>
-                    <div class="experience__description">
+                        <div class="experience__title">
                         <h2>VR Programmer intern</h2>
                         <h3>Innerspace VR</h3>
+                        </div>
                         <div class="experience__date">
                             <i class="fa-solid fa-calendar-days experience__date__logo"></i>
                             <p>2022 (4 months)</p>
@@ -293,8 +298,9 @@
                             <i class="fa-solid fa-location-dot experience__location__logo"></i>
                             <p>Saint-Ouen, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
+                        <div class="experience__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
+                            </p>
                     </div>
                 </div> <!-- / experience -->
 
@@ -302,9 +308,10 @@
                     <div class="experience__logos">
                         <img src="ressources/images/Logos/SonyCSL.png" alt="Logo CSL"/> 
                     </div>
-                    <div class="experience__description">
+                        <div class="experience__title">
                         <h2>AI Research Intern</h2>
                         <h3>Sony Computer Science Laboratories</h3>
+                        </div>
                         <div class="experience__date">
                             <i class="fa-solid fa-calendar-days experience__date__logo"></i>
                             <p>2021 (5 months)</p>
@@ -313,8 +320,9 @@
                             <i class="fa-solid fa-location-dot experience__location__logo"></i>
                             <p>Paris, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
+                        <div class="experience__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
+                            </p>
                     </div>
                 </div> <!-- / experience -->
 
@@ -323,9 +331,10 @@
                     <div class="experience__logos">
                         <img src="ressources/images/Logos/Fujitsu.svg" alt="Logo Fujitsu"/> 
                     </div>
-                    <div class="experience__description">
+                        <div class="experience__title">
                         <h2>AI Development Intern</h2>
                         <h3>Fujitsu Digital Business Solutions</h3>
+                        </div>
                         <div class="experience__date">
                             <i class="fa-solid fa-calendar-days experience__date__logo"></i>
                             <p>2020 (3 months)</p>
@@ -334,9 +343,10 @@
                             <i class="fa-solid fa-location-dot experience__location__logo"></i>
                             <p>Palaiseau, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
-                    </div>
+                        <div class="experience__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
+                            </p>
+                        </div>
                 </div> <!-- / experience -->
 
 
@@ -344,9 +354,10 @@
                     <div class="experience__logos">
                         <img src="ressources/images/Logos/Valdocco.png" alt="Logo Valdocco"/> 
                     </div>
-                    <div class="experience__description">
+                        <div class="experience__title">
                         <h2>Education and Tutoring Intern</h2>
                         <h3>Le Valdocco Argenteuil</h3>
+                        </div>
                         <div class="experience__date">
                             <i class="fa-solid fa-calendar-days experience__date__logo"></i>
                             <p>2018-2019 (6 months)</p>
@@ -355,9 +366,10 @@
                             <i class="fa-solid fa-location-dot experience__location__logo"></i>
                             <p>Argenteuil, France</p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
-                        </p>
-                    </div>
+                        <div class="experience__body">
+                            <p>Lorem ipsum dolor sit amet. 33 ipsa similique aut explicabo rerum ab molestiae consequatur. Et Quis dolores ut quia sed dolores sunt et molestiae ipsam eos neque explicabo qui consequatur dolorum et rerum iure. Et voluptatem nemo et facere sapiente et explicabo fugit aut consectetur rerum est omnis mollitia qui adipisci rerum vitae omnis.
+                            </p>
+                        </div>
                 </div> <!-- / experience -->
 
                 
