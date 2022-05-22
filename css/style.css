@@ -28,6 +28,9 @@
 
    --bs: .25em 0.25em 0.75em rgba(0, 0, 0, .25),
         .125em .125em 0.25em rgba(0, 0, 0, 0.15);
+
+    --ts: 0.15em 0.15em 0.2em  rgba(0, 0, 0, 0.3),
+          0.07em 0.07em 0.1em  rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 800px){
@@ -142,16 +145,13 @@ h3{
 }
 
 .section__subtitle{
-    margin: 0;
-    font-size: var(--fs-h3);    
+    font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
+    color: var(--clr-accent);    
 }
 
-.section__subtitle--intro,
-.section__subtitle--about{
-    background: var(--clr-accent);
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-    padding: .25em 1em;
+.section__subtitle--home{
+    text-shadow: var(--ts);
 }
 
 .section__subtitle--work{
@@ -319,20 +319,61 @@ header{
 }
 
 
+
 /* Home */
 .home{
     position: relative;
     background-color: var(--clr-dark);
-    background-image: url(../ressources/images/Games/Amon/home__amon.png);
+    background-image: 
+    linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
+    url(../ressources/images/Games/Amon/home__amon.png);
+    height: 100vh;
     background-size: cover;
-}
-
-/* Intro */
-
-.home{
-    position: relative;
+    background-position: center;
     color: var(--clr-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
+
+.home-title{
+    padding-bottom: 15em;
+}
+
+.home-title__name{
+    font-size: 4rem;
+    font-weight: var(--fw-light);
+}
+
+.home-title__lastname{
+    font-size: 5rem;
+    font-weight: var(--fw-reg);
+    text-transform:uppercase;
+    padding-left: 0.25em;
+}
+
+.section__subtitle--home{
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+}
+
+.btn--home{
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+
+@media (min-width: 800px){
+    .home{
+        background-image: 
+            linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
+            url(../ressources/images/Games/Amon/home__amon.png);
+    }
+}
+
 
 .intro__img{
     box-shadow: var(--bs);

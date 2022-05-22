@@ -10,7 +10,7 @@ const skillsBlock = document.getElementById('skills');
 const educationBlock = document.getElementById('education');
 
 window.onscroll = function(){
-    var headerBlock = document.getElementsByTagName('header')[0];
+    var headerBlock = document.getElementsByClassName('logos-header__list')[0];
     var top = window.scrollY + headerBlock.offsetHeight;
     console.log('Top: ' + top);
     if((top > aboutBlock.offsetTop && top<skillsBlock.offsetTop)||(top>educationBlock.offsetTop)){
