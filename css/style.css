@@ -29,15 +29,15 @@
    --bs: .25em 0.25em 0.75em rgba(0, 0, 0, .25),
         .125em .125em 0.25em rgba(0, 0, 0, 0.15);
 
-    --ts: 0.15em 0.15em 0.2em  rgba(0, 0, 0, 0.3),
-          0.07em 0.07em 0.1em  rgba(0, 0, 0, 0.2);
+    --ts: 0.15em 0.15em 0.2em  rgba(0, 0, 0, 0.2),
+          0.07em 0.07em 0.1em  rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 800px){
+@media (min-width: 1100px){
     :root{
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
+        --fs-h3: 2.25rem;
         --fs-body: 1.125rem;
     }
 }
@@ -77,20 +77,24 @@ section{
 
 .btn{
     display: inline-block;
-    padding: .5em 2.5em;
+    padding: 0 1.0em;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
+    font-size: 1.2rem;
     letter-spacing: 2px;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-light);
     transition: transform 200ms ease-in-out;
 }
 
 .btn:hover{
     transform: scale(1.1);
+}
+
+@media (min-width: 1100px){
+    .btn{
+    font-size: 1.5rem;}
 }
 
 /* Typography */
@@ -338,9 +342,6 @@ header{
     
 }
 
-.home-title{
-    padding-bottom: 15em;
-}
 
 .home-title__name{
     font-size: 4rem;
@@ -371,6 +372,31 @@ header{
         background-image: 
             linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
             url(../ressources/images/Games/Amon/home__amon.png);
+    }
+
+    .home-title__name{
+        font-size: 6rem;
+    }
+
+    .home-title__lastname{
+        font-size: 7.5rem;
+    }
+
+    .btn--home{
+        margin-left: auto;
+        margin-right: 8em;
+        display: block;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1100px){
+    .home-title__name{
+        font-size: 8rem;
+    }
+
+    .home-title__lastname{
+        font-size: 10rem;
     }
 }
 
