@@ -703,7 +703,7 @@ header{
 }
 
 .footer__link{
-    font-size: var(--fs-h3);
+    font-size: var(--fs-body);
     font-weight: var(--fw-bold);
 }
 
