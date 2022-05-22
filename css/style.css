@@ -202,10 +202,13 @@ header{
     width: 100%;
     position: fixed;
     top:0;
-
     transition: color 250ms cubic-bezier(.5, 0, .5, 1);
+    pointer-events: none;
 }
 
+.logos-header{
+    pointer-events: none;
+}
 
 .logos-header__list{
     list-style: none;
@@ -258,6 +261,9 @@ header{
     opacity: 0%;
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1),
                 opacity 250ms cubic-bezier(.8, 0, .6, 1);
+
+    pointer-events: none;
+
 }
 
 .nav__link{
@@ -273,6 +279,7 @@ header{
     display: flex;
     justify-content: end;
     padding-right: 1em;
+    pointer-events: auto;
 }
 
 .nav-toggle{
@@ -288,6 +295,7 @@ header{
 .nav-open .nav__list{
     transform: scaleY(100%);
     opacity: 100%;
+    pointer-events: auto;
 }
 
 
