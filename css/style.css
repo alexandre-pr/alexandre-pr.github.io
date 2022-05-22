@@ -542,18 +542,17 @@ header{
     }
 }
 
-@media (any-hover: none){
-    .portfolio-item-focus .portfolio__img{
+
+.no-hover .portfolio-item-focus .portfolio__img{
         transform: scale(1.2);
         opacity: 0.75;
     }
     
-    .portfolio-item-focus .portfolio__title
+.no-hover .portfolio-item-focus .portfolio__title
     {
         opacity: 1;
         transform: translateX(0%);
     }
-}
 
 
 /* Services */
