@@ -326,6 +326,7 @@ header{
         align-items: start;
         background: none;
         color: inherit;
+        pointer-events: auto;
     }
 
     .nav__item{
