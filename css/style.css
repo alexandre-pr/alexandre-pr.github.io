@@ -82,7 +82,7 @@ section{
     color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: var(--fw-light);
     transition: transform 200ms ease-in-out;
@@ -94,7 +94,7 @@ section{
 
 @media (min-width: 1100px){
     .btn{
-    font-size: 1.5rem;}
+    font-size: 2rem;}
 }
 
 /* Typography */
@@ -343,6 +343,10 @@ header{
 }
 
 
+.home-title{
+    padding-left: 3%;
+}
+
 .home-title__name{
     font-size: 4rem;
     font-weight: var(--fw-light);
@@ -384,7 +388,7 @@ header{
 
     .btn--home{
         margin-left: auto;
-        margin-right: 8em;
+        margin-right: min(50%, 6em);
         display: block;
         width: fit-content;
     }
