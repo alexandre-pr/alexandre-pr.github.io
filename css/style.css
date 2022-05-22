@@ -130,12 +130,6 @@ h3{
     }
 }
 
-@media (min-width: 1100px){
-    .nav{
-        font-size: var(--fs-h3);
-    }
-}
-
 .section__title{
     margin-bottom: .25em;
 }
