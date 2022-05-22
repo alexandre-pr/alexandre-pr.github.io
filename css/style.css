@@ -186,7 +186,9 @@ h3{
 }
 
 
-
+.section__subsubtitle{
+    font-family: var(--ff-secondary);
+}
 
 
 
@@ -363,7 +365,7 @@ header{
     background-image: 
     linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
     url(../ressources/images/Games/Amon/home__amon.png);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     color: var(--clr-light);
@@ -371,6 +373,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 2em;
     
 }
 
@@ -397,9 +400,6 @@ header{
     padding-left: 0.5em;
 }
 
-.btn--home{
-
-}
 
 
 @media (min-width: 800px){
@@ -436,43 +436,6 @@ header{
 }
 
 
-.intro__img{
-    box-shadow: var(--bs);
-}
-
-.section__subtitle--intro{
-    display: inline-block;
-}
-
-@media (min-width:600px){
-    .intro{
-        display: grid;
-        grid-column-gap: 1em;
-        width: min-content;
-        margin: 0 auto;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-
-    .intro__img{
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .section__subtitle--intro{
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-    }
-}
 
 
 /* my work */
@@ -609,8 +572,8 @@ header{
 }
 
 .section__subsubtitle--about{
+    
     text-align: right;
-    font-family: var(--ff-secondary);
     margin-top: 0;
 }
 
@@ -767,6 +730,17 @@ header{
     min-height: 100vh;
     max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.my-education::after{
+    content: '';
+    display: block;
+    width: 70%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-dark);
+    opacity: 0.25;
 }
 
 
@@ -887,6 +861,7 @@ header{
     min-height: 100vh;
     max-width: 1000px;
     margin: 0 auto;
+    padding-top: 2em;
 }
 
 
@@ -1056,4 +1031,165 @@ header{
         font-size: var(--fs-body);
     }
 
+}
+
+
+
+
+/* Item Page*/
+
+/* Home */
+.item-page-home{
+    position: relative;
+    background-color: var(--clr-dark);
+    background-image: 
+    linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
+    url(../ressources/images/Games/Amon/page-home__amon.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 90%;
+    color: var(--clr-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2em;
+    
+}
+
+
+.item-page-home__title{
+    padding-top: 5vh;
+}
+
+.item-page-home__title img{
+    max-width: 600px;
+    filter: var(--filter-white);
+}
+
+.section__subtitle--item-page-home{
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+        text-shadow: var(--ts);
+
+}
+
+.item-page-home__buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+
+@media (min-width: 800px){
+    .item-page-home{
+        background-image: 
+            linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
+            url(../ressources/images/Games/Amon/home__amon.png);
+    }
+
+    .item-page-home__title{
+        padding-left: 3vw;
+    }
+
+    .btn--item-page-home{
+        margin-left: auto;
+        margin-right: min(50%, 6em);
+        display: block;
+        width: fit-content;
+    }
+
+    .item-page-home__buttons{
+        flex-direction: row;
+    }
+}
+
+/* Intro */
+
+.item-page-intro{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-page-intro__description{
+    margin-bottom: 2em;
+}
+
+.section__title--item-page-intro{
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-h2-5);
+    text-align: right;
+    width: 90%;
+    margin-left: auto;
+    margin-right: 0;
+    
+}
+
+.section__title--item-page-intro::after{
+    content:none;
+}
+
+.item-page-intro__img{
+    max-height: 50vh;
+    position: relative;
+    margin-top: -1em;
+}
+
+.section__subtitle--item-page-intro{
+    font-size: var(--fs-h2-5);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.item-page-intro__buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.section__subsubtitle--item-page-intro{
+    text-align: center;
+}
+
+@media (min-width: 800px){
+
+    .item-page-intro__description{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title img"
+        "body img";
+    }
+
+    .section__title--item-page-intro{
+        text-align: left;
+        grid-area: title;
+        position: relative;
+        left: 0;
+        margin-left: 0;
+        right: -.5em;
+        width: calc(100% + 0.5em);
+    }
+
+    .item-page-intro__img{
+        grid-area: img;
+        transform: scale(-1, 1);
+        max-height: 80vh;
+    }
+
+    .item-page-intro__body{
+        grid-area: body;
+    }
+
+    .section__subtitle--item-page-intro{
+        font-size: var(--fs-h2);
+    }
+
+    .item-page-intro__buttons{
+        flex-direction: row;
+    }
+
+    .section__subsubtitle--item-page-intro{
+        font-size: calc(var(--fs-h3)*0.8);
+    }
 }
