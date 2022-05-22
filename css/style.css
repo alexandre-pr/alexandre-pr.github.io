@@ -591,6 +591,10 @@ header{
     align-self: end;
 }
 
+.btn--about{
+    width: 8em;
+}
+
 .btn--about + .btn--about{
     margin-top: 1em;
 }
@@ -633,6 +637,12 @@ header{
         flex-direction: row;
         margin-top: 1em;
     }
+
+    
+    .btn--about{
+        width: 7em;
+    }
+
 
     .btn--about + .btn--about{
         margin-top: 0em;
@@ -962,7 +972,7 @@ header{
     }
 
     .experience__logos img{
-        max-height: 150px;
+        max-height: 130px;
         max-width: 130px;
     }
     
@@ -990,7 +1000,7 @@ header{
 }
 
 .footer__link{
-    font-size: var(--fs-body);
+    font-size: calc(var(--fs-body)*0.9);
     font-family: var(--ff-secondary);
     font-weight: var(--fw-reg);
 }
@@ -1030,4 +1040,11 @@ header{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 800px){
+    .footer__link{
+        font-size: var(--fs-body);
+    }
+
 }
