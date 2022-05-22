@@ -141,8 +141,13 @@ h3{
     width: 3em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     opacity: 0.25;
+}
+
+.section__title--work::after{
+   
+    background-color: var(--clr-light);
 }
 
 .section__title--intro{
