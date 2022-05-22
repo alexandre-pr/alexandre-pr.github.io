@@ -3,6 +3,7 @@
 $(function(){
     $("#loaded_header").load("header.html"); 
     $("#loaded_footer").load("footer.html"); 
+    $("#loaded_header-portfolio-item").load("portfolio-item-header.html"); 
 });
 
 const aboutBlock = document.getElementById('about');
