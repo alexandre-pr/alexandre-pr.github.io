@@ -580,10 +580,10 @@ header{
 @media(min-width: 600px){
     .about-me{
         display: grid;
-        grid-template-columns: 1fr 0.5fr;
+        grid-template-columns: 0.6fr 1fr;
         grid-template-areas: 
-            "title img"
-            "text img"
+            "img title"
+            "img text"
             "btns btns";
             
         column-gap: 2em;
@@ -592,22 +592,31 @@ header{
     .section__title--about{
         grid-area: title;
         align-self: center;
-        justify-self: right;
+        justify-self: start;
         margin-right: 1em;
     }
 
     .section__title--about::after{
-        margin-bottom: 0.2em;
+        content: none;
     }
 
     .about-me__img-block{
         grid-area: img;
+        align-self: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-me__img-block img{
+        object-fit: cover;
+        margin: 0em;
+        height: calc(100% - 1em);
     }
 
     .about-me__buttons{
         grid-area: btns;
         flex-direction: row;
-        margin-top: 1em;
+        margin-top: 3em;
     }
 
     
@@ -652,10 +661,26 @@ header{
     margin: 0 auto;
 }
 
+.skill__body p{
+    margin-bottom: 0;
+}
+
+.skill__body p + p{
+    margin-top: 0.5em;
+}
+
 .skills img{
-    max-width: 100px;
+    max-width: calc(min((40%, 12 vw)));
     margin: 0 auto;
     margin-bottom: 1em;
+}
+
+.skills .skill__body + img {
+    margin-top: 4em;
+}
+
+.skill__img--2{
+    padding-left: 1em;
 }
 
 @media (min-width: 800px){
@@ -669,6 +694,12 @@ header{
         "img1 img2 img3"
         "title1 title2 title3"
         "txt1 txt2 txt3";
+        column-gap: 1em;
+        row-gap: 0.5em;
+    }
+
+    .skill__title{
+        margin: auto;
     }
 
     .skills img{
@@ -715,6 +746,10 @@ header{
 
     .skill + .skill{
         margin-left: 2em;
+    }
+
+    .skills img{
+        max-width: 20vw;
     }
 }
 
@@ -1174,7 +1209,7 @@ header{
     .item-page-intro__img{
         grid-area: img;
         transform: scale(-1, 1);
-        max-height: 80vh;
+        max-height: 70vh;
     }
 
     .item-page-intro__body{
