@@ -1105,7 +1105,7 @@ header{
 .section__subtitle--item-page-home{
     padding-top: 0.2em;
     padding-left: 0.5em;
-        text-shadow: var(--ts);
+    text-shadow: var(--ts);
 
 }
 
@@ -1150,6 +1150,10 @@ header{
     margin-bottom: 2em;
 }
 
+.btn--item-page-intro{
+    width: 9em;
+}
+
 .section__title--item-page-intro{
     font-weight: var(--fw-reg);
     font-size: var(--fs-h2-5);
@@ -1174,6 +1178,7 @@ header{
     font-size: var(--fs-h2-5);
     text-align: center;
     margin-bottom: 0.5em;
+    padding-top: 2em;
 }
 
 .item-page-intro__buttons{
@@ -1190,7 +1195,7 @@ header{
 
     .item-page-intro__description{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.3fr 0.7fr;
         grid-template-areas: 
         "title img"
         "body img";
@@ -1234,39 +1239,74 @@ header{
 /* Images with desciption  */
 
 .item-page-section{
-    
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.image-w-description + .image-w-description{
-    margin-top: 3em;
+.images-w-description
+{
+    text-align: center;
+    align-items: center;
+    row-gap: 1em;
 }
 
+
+/* .image-w-description + .image-w-description{
+    margin-top: 3em;
+} */
+
+
+.image-w-description{
+    display: inline-flex;
+    overflow: hidden;
+    width: 100%;
+    min-height: 25vh;
+}
+
+.image-w-description:nth-of-type(2n){
+    direction: rtl;
+}
+
+.image-w-description__description{
+    text-align: left;
+    font-family: var(--ff-primary);
+}
 
 .image-w-description__img{
     background-color: var(--clr-light);
-    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 50%;
+    
 }
 
+.image-w-description--large
+{
+    display: inline-block;
+}
+
+.image-w-description--large .image-w-description__img{
+    max-width: 100%;
+}
 
 @media (min-width: 800px){
-    .images-w-description{
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
+    .images-w-description
+    {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        text-align: center;
+        row-gap: 0em;
     }
+
 
     .image-w-description{
-        background-color: var(--clr-accent);
+        display: inline-block;
+        background-color: var(--clr-dark);
+        max-width: 25%;
+        width: auto;
+        min-height: 10vh;
         overflow: hidden;
-    }
-
-    .image-w-description + .image-w-description{
-        margin-top: 0em;
-    }
-
-    .image-w-description--large{
-        grid-column: auto / span 2;
     }
 
     .image-w-description__description{
@@ -1283,37 +1323,47 @@ header{
     }
 
     .section__subtitle--item-page-section{
-        font-size: var(--fs-h2);
-        color: var(--clr-light);
+        font-size: var(--fs-body);
+        color: var(--clr-accent );
     }
 
-    .section__subsubtitle--item-page-section{
+    .image-w-description__description p{
+        font-size: var(--fs-body);
         color: var(--clr-light)
     }
     
     .image-w-description__img{
-        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
         transform: scale(1.01);
         transition: 
             transform 750ms cubic-bezier(.5, 0, .5, 1),
             opacity 250ms linear;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .image-w-description:focus{
-        position: relative;
-        z-index: 2;
-    }
-    
-    .image-w-description:hover .image-w-description__img,
-    .image-w-description:focus .image-w-description__img{
+    .image-w-description:hover .image-w-description__img
+    {
         transform: scale(1.2);
-        opacity: 0.75;
+        opacity: 0.2;
     }
 
-    .image-w-description:hover .image-w-description__description,
-    .image-w-description:focus .image-w-description__description{
+    .image-w-description:hover .image-w-description__description
+    {
         transform: translateX(0);
         opacity: 1;
+    }
+
+    .image-w-description--large{
+        max-width: 50%;
+    }
+
+    .image-w-description:nth-of-type(2n){
+        direction: ltr;
     }
 
 }
