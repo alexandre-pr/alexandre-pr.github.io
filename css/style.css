@@ -1604,3 +1604,29 @@ header{
         font-size: calc(var(--fs-h3)*0.8);
     }
 }
+
+
+/* SunkPearl */
+.item-page-home--sunkpearl{
+    background-image: 
+    url(../ressources/images/Games/MoodSeed/home__moodseed.png);
+    background-color: black;
+    background-position: 50%;
+}
+
+/* Illustration */
+.item-page-home--illustrations{
+    background-image: none;
+    background-color: black;
+    background-position: 50%;
+    min-height: auto;
+}
+
+.item-page-section--illustrations-body .image-w-description--xlarge{
+    max-height: 80vh;
+}
+
+.item-page-section--illustrations-body .image-w-description--xlarge + .image-w-description--xlarge{
+    margin: 2em;
+}
+
