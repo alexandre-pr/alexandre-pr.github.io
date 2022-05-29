@@ -1565,6 +1565,7 @@ header{
     linear-gradient(to right, rgba(28, 9, 0, 0.651), rgba(0, 0, 0, 0) 30%, rgba(163, 163, 163, 0)),
     url(../ressources/images/Games/Domos/home__domos.png);
     background-color: black;
+    background-position: 50%;
     
 }
 
@@ -1618,7 +1619,6 @@ header{
 .item-page-home--illustrations{
     background-image: none;
     background-color: black;
-    background-position: 50%;
     min-height: auto;
 }
 
