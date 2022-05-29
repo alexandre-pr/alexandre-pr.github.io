@@ -1657,6 +1657,14 @@ header{
     margin: 2em;
 }
 
-.btn--intro-moodseed{
+.item-page-intro--moodseed{
     margin-top: 2em;
+}
+
+.item-page-intro__buttons--amon{
+    margin-bottom: 2em;
+}
+
+.back-buttons{
+    margin-top: 10em;
 }
