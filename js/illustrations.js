@@ -1,4 +1,4 @@
-const introBlock = document.getElementById('intro');
+const introBlock = document.getElementById('body');
 
 
 window.onscroll = function(){
