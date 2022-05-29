@@ -1216,6 +1216,9 @@ header{
     font-size: var(--fs-h2-5);
     text-align: center;
     margin-bottom: 0.5em;
+}
+
+.section__subtitle--item-page-intro--amon{
     padding-top: 2em;
 }
 
@@ -1634,7 +1637,7 @@ header{
 /* SunkPearl */
 .item-page-home--sunkpearl{
     background-image: 
-    url(../ressources/images/Games/MoodSeed/home__moodseed.png);
+    url(../ressources/images/Games/SunkPearl/home__sunkpearl.png);
     background-color: black;
     background-position: 50%;
 }
