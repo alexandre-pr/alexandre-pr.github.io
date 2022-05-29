@@ -1572,7 +1572,9 @@ header{
 
 @media (min-width: 800px){
 
-    .item-page-intro--domos .item-page-intro__description{
+    .item-page-intro--domos .item-page-intro__description,
+    .item-page-intro--sunkpearl .item-page-intro__description
+    {
         grid-template-columns: 1.3fr 0.7fr;
         grid-template-areas:
         "video title" 
