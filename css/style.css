@@ -402,6 +402,9 @@ header{
     font-weight: var(--fw-light);
 }
 
+
+
+
 .home-title__lastname{
     font-size: 5rem;
     font-weight: var(--fw-reg);
@@ -1515,4 +1518,35 @@ header{
         text-align: left;
     }
 
+}
+
+.item-page-home-title{
+    font-size: 4rem;
+    font-weight: var(--fw-light);
+}
+
+@media (min-width: 800px){
+
+    .item-page-home-title{
+        font-size: 6rem;
+    }
+}
+
+
+
+/* Mood seed */
+.item-page-home--moodseed{
+    background-image: 
+    url(../ressources/images/Games/MoodSeed/home__moodseed.png);
+    background-color: black;
+    
+}
+
+/* Mood seed */
+.item-page-home--domos{
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0) 20%, rgba(163, 163, 163, 0)),
+    url(../ressources/images/Games/Domos/home__domos.png);
+    background-color: black;
+    
 }
