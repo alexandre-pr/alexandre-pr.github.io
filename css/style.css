@@ -1554,9 +1554,26 @@ header{
 /* Mood seed */
 .item-page-home--moodseed{
     background-image: 
-    url(../ressources/images/Games/MoodSeed/home__moodseed.png);
-    background-color: black;
+    none;
+    background-color: transparent;
     background-position: 50%;
+}
+
+
+.item-page-home__background-video video{
+    z-index: -100;
+    background: url(../ressources/images/Games/MoodSeed/home__moodseed.png) no-repeat;
+    background-size: cover;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transform: translateX(calc((100% - 100vw) / 2));
 }
 
 /* Domos */
@@ -1580,6 +1597,11 @@ header{
         "video title" 
         "video body";
         column-gap: 1em;
+    }
+
+    .item-page-intro--moodseed .item-page-intro__description
+    {
+        display: block;
     }
 
     .item-page-intro--domos p{
@@ -1632,3 +1654,6 @@ header{
     margin: 2em;
 }
 
+.btn--intro-moodseed{
+    margin-top: 2em;
+}
