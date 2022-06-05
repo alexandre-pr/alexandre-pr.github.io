@@ -1169,9 +1169,13 @@ header{
 
     .btn--item-page-home{
         margin-left: auto;
-        margin-right: min(50%, 6em);
+        
         display: block;
         width: fit-content;
+    }
+
+    .btn--item-page-home + .btn--item-page-home{
+        margin-left: min(50%, 6em);
     }
 
     .item-page-home__buttons{
