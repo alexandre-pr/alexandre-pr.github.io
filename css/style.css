@@ -1674,3 +1674,20 @@ header{
 .back-buttons{
     margin-top: 10em;
 }
+
+
+.item-page-home--vfx{
+    background-image: none;
+    background-color: black;
+    min-height: auto;
+}
+
+.image-w-description__video--aphrodite{
+    object-position: 5% 0;
+    object-fit: fill;
+}
+
+.item-page__video{
+    margin: 0.5em;
+    width: 90%;
+}
