@@ -11,18 +11,20 @@ const illustrationsBlock = document.getElementById('illustrations');
 
 
 window.onscroll = function(){
-    var headerBlock = document.getElementsByClassName('logos-header__list')[0];
-    var top = window.scrollY + headerBlock.offsetHeight;
+    var headerBlock = document.getElementsByClassName('header__logos')[0];
+    
     var startfocus = window.scrollY + 0.85 * window.innerHeight;
     var stopfocus = window.scrollY + 0.15 * window.innerHeight;
 
-    console.log('Top: ' + top);
-    if((top > aboutBlock.offsetTop && top<skillsBlock.offsetTop)||(top>educationBlock.offsetTop)){
-        document.body.classList.add('light-background');
-    } else {
-        document.body.classList.remove('light-background');
-            }
-
+    if(headerBlock != null){
+        var top = window.scrollY + headerBlock.offsetHeight;
+        //console.log('Top: ' + top);
+        if((top > aboutBlock.offsetTop && top<skillsBlock.offsetTop)||(top>educationBlock.offsetTop)){
+            document.body.classList.add('light-background');
+        } else {
+            document.body.classList.remove('light-background');
+                }
+    }
 
 
     var portfolioItems = document.getElementsByClassName('portfolio__item');
