@@ -214,12 +214,12 @@ h3{
 }
 
 
-.home-title{
+.home__title{
     padding-top: 5%;
     padding-left: 3%;
 }
 
-.home-title__name{
+.home__title-name{
     font-size: 4rem;
     font-weight: var(--fw-light);
 }
@@ -227,16 +227,28 @@ h3{
 
 
 
-.home-title__lastname{
+.home__title-lastname{
     font-size: 5rem;
     font-weight: var(--fw-reg);
     text-transform:uppercase;
     padding-left: 0.25em;
 }
 
-.section__subtitle--home{
+#home .section__subtitle{
     padding-top: 0.2em;
     padding-left: 0.5em;
+}
+
+.home__buttons{
+    
+}
+
+#home .btn{
+    display:block;
+}
+
+#home .btn + .btn{
+    margin-top: 2em;
 }
 
 
@@ -248,15 +260,15 @@ h3{
             url(../ressources/images/Games/Amon/home__amon.png);
     }
 
-    .home-title__name{
+    .home__title-name{
         font-size: 6rem;
     }
 
-    .home-title__lastname{
+    .home__title-lastname{
         font-size: 7.5rem;
     }
 
-    .btn--home{
+    .home__buttons{
         margin-left: auto;
         margin-right: min(50%, 6em);
         display: block;
@@ -265,11 +277,11 @@ h3{
 }
 
 @media (min-width: 1100px){
-    .home-title__name{
+    .home__title-name{
         font-size: 8rem;
     }
 
-    .home-title__lastname{
+    .home__title-lastname{
         font-size: 10rem;
     }
 }
