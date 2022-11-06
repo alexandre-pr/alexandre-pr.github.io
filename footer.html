@@ -12,6 +12,7 @@
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Source+Code+Pro:400,700&display=swap">
         
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_footer.css">
 
         <!-- Scripts -->
         <script
@@ -25,35 +26,62 @@
 <body>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="contact">        
+
+        <h2 class="section__title section__title--contact">Contact me</h2>   
+        <div class="footer__content">
+
+
+        <div class="footer__contacts">
+            <a href="mailto:alexandre.perot.2018@polytechnique.org" class="footer__link">alexandre.perot.2018@polytechnique.org</a>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://fr.linkedin.com/in/alexandre-perot">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
                 
-        <a href="mailto:alexandre.perot.2018@polytechnique.org" class="footer__link">alexandre.perot.2018@polytechnique.org</a>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://iamyukim.itch.io/">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </li>
+
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://twitter.com/itsyukimm">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="https://www.instagram.com/itsyukimm/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
         
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://fr.linkedin.com/in/alexandre-perot">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-            
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://iamyukim.itch.io/">
-                    <i class="fa-brands fa-itch-io"></i>
-                </a>
-            </li>
+        <div class="footer__form">
+            <form
+            action="https://formspree.io/f/myyvbren"
+            method="POST"
+            >
+            <label>   
+            <div class="footer__email-prompt">your email:</div>
+            <div class="footer__email-input"><input type="email" name="email"></div>
+            </label>
 
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/itsyukimm">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
 
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.instagram.com/itsyukimm/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-        </ul>
+            <label>
+                <div class="footer__body-prompt">your message:</div>
+                <div class="footer__body-input"><textarea name="message"></textarea></div>
+            </label>
+            <!-- your other form fields go here -->
+            <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+        
     </footer>
 
 </body>

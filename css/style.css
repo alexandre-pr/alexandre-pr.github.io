@@ -25,6 +25,7 @@
    --fs-h2:2.25rem;
    --fs-h2-5: 1.6rem;
    --fs-h3:1.25rem;
+   --fs-h4:1.2rem;
    --fs-body:1rem;
 
    --filter-clr: invert(53%) sepia(29%) saturate(784%) hue-rotate(316deg) brightness(114%) contrast(85%);
@@ -35,6 +36,9 @@
 
     --ts: 0.15em 0.15em 0.2em  rgba(0, 0, 0, 0.2),
           0.07em 0.07em 0.1em  rgba(0, 0, 0, 0.1);
+
+    --header-height: max(7vh, 45px);
+    --header-top-padding: 0.5em;
 }
 
 @media (min-width: 1100px){
@@ -43,6 +47,7 @@
         --fs-h2: 3.75rem;
         --fs-h2-5: 3rem;
         --fs-h3: 2.25rem;
+        --fs-h4: 1.5rem;
         --fs-body: 1.125rem;
     }
 }
@@ -93,11 +98,17 @@ section{
     cursor: pointer;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-reg);
     transition: transform 200ms ease-in-out;
 
     width: fit-content;
 }
+
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    
+    border: none;
+ }
 
 .btn:hover{
     transform: scale(1.1);
@@ -195,6 +206,7 @@ h3{
 
 
 /* Home */
+
 .home{
     position: relative;
     background-color: var(--clr-dark);
@@ -205,6 +217,10 @@ h3{
     background-size: cover;
     background-position: center;
     color: var(--clr-light);
+    padding-top: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
 
     display: flex;
     flex-direction: column;
@@ -214,21 +230,48 @@ h3{
 }
 
 
+.home__education-logos-list{
+    list-style: none;
+    display: flex;
+    align-self: start;
+    align-items: center;
+    padding: 0 0 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.home__education-logo{
+    margin: 0 0.5em 0;
+    padding: 0.5em 0 0.5em;
+}
+
+.home__education-logo img {
+    height: calc(0.8 * var(--header-height));
+    
+    filter: var(--filter-white);
+    transition: filter 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+#home-cnam-logo{
+    height: calc(0.4 * var(--header-height));
+}
+
+
 .home__title{
     padding-top: 5%;
     padding-left: 3%;
 }
 
-.home__title-name{
-    font-size: 4rem;
+.home__name{
+    font-size: 4em;
     font-weight: var(--fw-light);
 }
 
 
 
 
-.home__title-lastname{
-    font-size: 5rem;
+.home__lastname{
+    font-size: 6rem;
     font-weight: var(--fw-reg);
     text-transform:uppercase;
     padding-left: 0.25em;
@@ -236,15 +279,19 @@ h3{
 
 #home .section__subtitle{
     padding-top: 0.2em;
-    padding-left: 0.5em;
+    padding-left: 1em;
 }
 
 .home__buttons{
-    
+    width: fit-content;
+    display: block;
+    margin: auto auto 5em;
 }
 
 #home .btn{
     display:block;
+    width: 100%;
+    margin: auto;
 }
 
 #home .btn + .btn{
@@ -260,19 +307,35 @@ h3{
             url(../ressources/images/Games/Amon/home__amon.png);
     }
 
-    .home__title-name{
+    .home__name{
         font-size: 6rem;
     }
 
-    .home__title-lastname{
-        font-size: 7.5rem;
+    .home__lastname{
+        font-size: 8rem;
+    }
+
+    .home__left-section{
+        margin: 0;
+        padding:0;
     }
 
     .home__buttons{
         margin-left: auto;
-        margin-right: min(50%, 6em);
+        margin-right: min(50%, 10em);
         display: block;
         width: fit-content;
+    }
+
+
+    .home__education-logos-list{
+        align-self: end;
+        height: fit-content;
+    }
+
+    .home__education-logo img {
+        height: calc(1.0 * var(--header-height));
+        
     }
 }
 
@@ -380,18 +443,21 @@ h3{
 }
 
 @media(hover:none){
-.portfolio-item-focus .portfolio__img{
-        transform: scale(1.2);
-        opacity: 0.75;
-    }
-    
-.portfolio-item-focus .portfolio__title
-    {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+
 }
-    
+
+.no-hover .portfolio-item-focus .portfolio__img{
+    transform: scale(1.2);
+    opacity: 0.75;
+}
+
+.no-hover .portfolio-item-focus .portfolio__title
+{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+
 /* About me */
 
 .about-me{
@@ -750,7 +816,7 @@ h3{
     min-height: 100vh;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 2em;
+    margin-top: 2em;
 }
 
 
@@ -859,49 +925,6 @@ h3{
 
 
 
-/* Footer */
-.footer{
-    background: #111;
-    color:var(--clr-accent);
-    text-align: center;
-    padding: 2.5em 0;
-}
-
-.footer a{
-    color: inherit;
-    text-decoration: none;
-}
-
-.footer__link{
-    font-size: calc(var(--fs-body)*0.9);
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-reg);
-}
-
-.footer__link:hover,
-.social-list__link:hover {
-    opacity: .7;
-}
-
-.footer__link:hover{
-    text-decoration: underline;
-}
-
-.social-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
-}
-
-.social-list__item{
-    margin: 0 0.5em;
-}
-
-.social-list__link{
-    padding: .5em;
-}
 
 .portfolio-item-individual{
     padding: 0 2em 2em;

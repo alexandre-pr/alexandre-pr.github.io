@@ -25,26 +25,12 @@
 
     <body>
         <header class="header">
+
+            
+            
+
             <div class="header__logos">
-                <ul class="header__education-logos-list">
-                    <li class="header__education-logo">
-                        <img src="ressources/images/Logos/Polytechnique_black.svg" alt="Logo polytechnique" id="header-polytechnique-logo"/>
-                    </li>
-
-                    <li class="header__education-logo">
-                        <img src="ressources/images/Logos/Cnam_black.svg" alt="Logo cnam" id="header-cnam-logo"/>
-                    </li>
-
-                    <li class="header__education-logo">
-                        <img src="ressources/images/Logos/Gobelins_black.svg" alt="Logo gobelins" id="header-gobelins-logo"/>
-                    </li>
-                </ul>
-                <div class="header__nav-toggle">
-                    <button class="header__nav-toggle-button" aria-label="nav toggle button">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-
+                
                 <nav class="nav nav--desktop">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html#home" class="nav__link"><span class="nav__link-text">Home</span></a></li>
@@ -53,12 +39,27 @@
                         <li class="nav__item"><a href="index.html#skills" class="nav__link">Skill</a></li>
                         <li class="nav__item"><a href="index.html#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="index.html#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
-                    </ul>
+                        <!--
+                            <li class="nav__item"><a href="index.html#contact" class="nav__link nav__link--contact">Contact me</a></li>
+                        -->
+                        </ul>
                 </nav>
+
+                
+                
+                <div class="header__contact-btn">
+                    <a href="#contact" class="btn">Contact me</a>
+                </div>
+                <div class="header__nav-toggle">
+                    <button class="header__nav-toggle-button" aria-label="nav toggle button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+
+
+                
             </div>
-            
-            
 
             <nav class="nav nav--mobile">
                 <ul class="nav__list">
@@ -68,9 +69,14 @@
                     <li class="nav__item"><a href="index.html#skills" class="nav__link">Skill</a></li>
                     <li class="nav__item"><a href="index.html#education" class="nav__link">Education</a></li>
                     <li class="nav__item"><a href="index.html#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                    <!--
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact me</a></li>
+                    -->
                 </ul>
             </nav>
+            
+            
+
         </header>
         
         <script src="js/header.js"></script>

@@ -1,0 +1,125 @@
+
+/* Footer */
+.footer{
+    background: var(--clr-dark);
+    color:var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    height: calc(min(100vh - var(--header-height), 100%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--ff-secondary);
+}
+
+.footer .btn{
+    margin-top: 1em;
+    width: fit-content;
+    font-size: var(--fs-h2);
+}
+
+.footer__content{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    gap: 3em;
+    padding-bottom: 4em;
+}
+
+.footer__form{
+    font-size: var(--fs-h3);
+}
+
+.footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link{
+    font-size: min(var(--fs-h4), 4vw);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    margin: 1em 0 1em;
+}
+
+.footer__link:hover,
+.footer__social-link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+
+.footer__social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1em 0 1em;
+    padding: 0;
+    height: calc(var(--fs-h2)*2);
+}
+
+.footer__social-item{
+    margin: 0 0.5em;
+    width: calc(var(--fs-h2)*1.8);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social-link{
+    margin: auto;
+    display: flex;
+    font-size: var(--fs-h2);
+    padding: .5em;
+    transition: font-size 200ms ease-in-out;
+}
+
+.footer__social-link:hover{
+    font-size: calc(1.1*var(--fs-h2));
+}
+
+.footer__form{
+    display:block;
+}
+
+.footer__body-input textarea{
+    height: 20vh;
+}
+
+.footer__body-prompt{
+    margin-top: 1em;
+}
+
+.section__title--contact{
+    color:white;
+    margin: auto;
+}
+
+.section__title--contact::after{
+    background-color: white;
+}
+
+@media (min-width: 800px){
+
+    .footer__content{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer__contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__form{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
