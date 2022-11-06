@@ -1,0 +1,144 @@
+
+/* Home */
+
+.home{
+    position: relative;
+    background-color: var(--clr-dark);
+    background-image: 
+    linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
+    url(../ressources/images/Games/Amon/home__amon.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: var(--clr-light);
+    padding-top: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2em;
+    
+}
+
+
+.home__education-logos-list{
+    list-style: none;
+    display: flex;
+    align-self: start;
+    align-items: center;
+    padding: 0 0 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.home__education-logo{
+    margin: 0 0.5em 0;
+    padding: 0.5em 0 0.5em;
+}
+
+.home__education-logo img {
+    height: calc(0.8 * var(--header-height));
+    
+    filter: var(--filter-white);
+    transition: filter 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+#home-cnam-logo{
+    height: calc(0.4 * var(--header-height));
+}
+
+
+.home__title{
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+.home__name{
+    font-size: 4em;
+    font-weight: var(--fw-light);
+}
+
+
+
+
+.home__lastname{
+    font-size: 6rem;
+    font-weight: var(--fw-reg);
+    text-transform:uppercase;
+    padding-left: 0.25em;
+}
+
+#home .section__subtitle{
+    padding-top: 0.2em;
+    padding-left: 1em;
+}
+
+.home__buttons{
+    width: fit-content;
+    display: block;
+    margin: auto auto 5em;
+}
+
+#home .btn{
+    display:block;
+    width: 100%;
+    margin: auto;
+}
+
+#home .btn + .btn{
+    margin-top: 2em;
+}
+
+
+
+@media (min-width: 800px){
+    .home{
+        background-image: 
+            linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
+            url(../ressources/images/Games/Amon/home__amon.png);
+    }
+
+    .home__name{
+        font-size: 6rem;
+    }
+
+    .home__lastname{
+        font-size: 8rem;
+    }
+
+    .home__left-section{
+        margin: 0;
+        padding:0;
+    }
+
+    .home__buttons{
+        margin-left: auto;
+        margin-right: min(50%, 10em);
+        display: block;
+        width: fit-content;
+    }
+
+
+    .home__education-logos-list{
+        align-self: end;
+        height: fit-content;
+    }
+
+    .home__education-logo img {
+        height: calc(1.0 * var(--header-height));
+        
+    }
+}
+
+@media (min-width: 1100px){
+    .home__title-name{
+        font-size: 8rem;
+    }
+
+    .home__title-lastname{
+        font-size: 10rem;
+    }
+}

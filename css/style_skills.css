@@ -1,0 +1,134 @@
+
+
+
+/* Services */
+
+.skills{
+    background-color: var(--clr-dark);
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+.skills .section__title::after{
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-light);
+    opacity: 0.25;
+}
+
+.skills__block{
+    margin-bottom: 4em;
+} 
+
+/**
+.skill{
+    max-width: 500px;
+    margin: 0 auto;
+}**/
+
+.skills__body p{
+    margin-bottom: 0;
+}
+
+.skills__body p + p{
+    margin-top: 0.5em;
+}
+
+.skills__logo{
+    max-height: 10vh;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.skills__block .skills__body + .skills__logo {
+    margin-top: 4em;
+}
+
+#skill2 .skills__logo{
+    padding-left: 1em;
+}
+
+@media (min-width: 800px){
+    .skills__block{
+        display: grid;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "img1 img2 img3"
+        "title1 title2 title3"
+        "txt1 txt2 txt3";
+        column-gap: 1em;
+        row-gap: 0.5em;
+    }
+
+    .skills__title{
+        margin: auto;
+    }
+
+    .skills__logo{
+        margin: auto;
+    }
+
+    #skill1-title{
+        grid-area: title1;
+    }
+
+    #skill1-logo{
+        grid-area: img1;
+    }
+
+    #skill1-body {
+        grid-area: txt1;
+    }
+
+    #skill2-title{
+        grid-area: title2;
+    }
+
+    #skill2-logo{
+        grid-area: img2;
+        height: 80%;
+    }
+
+    #skill2-body{
+        grid-area: txt2;
+    }
+
+    #skill3-title{
+        grid-area: title3;
+    }
+
+    #skill3-logo{
+        grid-area: img3;
+        height: 80%;    
+    }
+
+    #skill3-body{
+        grid-area: txt3;
+    }
+
+
+/**
+    .skill + .skill{
+        margin-left: 2em;
+    }
+**/
+    .skills__logo{
+        max-width: 18vw;
+    }
+
+    .skills__block .skills__body + .skills__logo {
+        margin-top: 0em;
+    }
+}
+
+

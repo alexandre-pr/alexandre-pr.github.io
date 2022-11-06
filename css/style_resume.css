@@ -1,0 +1,178 @@
+
+/* Education */
+
+.resume{
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.resume__subsection{
+    padding-top: 5em;
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume .section__title::after{
+    margin-bottom: 0.5em;
+}
+
+.resume .section__subtitle{
+    color: var(--clr-dark);
+    font-size: var(--fs-h2-5);
+}
+
+.resume .link{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.resume__block{
+    margin-top: 0em;
+}
+
+.resume__item{
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    
+    "title title logo"
+    "date location location"
+    "body body body";
+}
+
+.resume__title{
+    grid-area: title;
+}
+
+.resume__title h2{
+    font-size: var(--fs-h4);
+    
+}
+
+.resume__title h3{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-light);
+}
+
+.resume__body{
+    height: fit-content;
+    margin: 0;
+    display: none;
+}
+
+.resume__body p,
+.resume__body ul{
+    margin:0;
+}
+
+.resume__date{
+    grid-area: date;
+}
+
+.resume__date,
+.resume__location{
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin-top: 0em;
+}
+
+.resume__date p,
+.resume__location p,
+.resume__date-logo,
+.resume__location-logo{
+    font-size: calc(var(--fs-body) * 0.8);
+    margin: 0
+}
+
+.resume__location{
+    grid-area: location;
+}
+
+.resume__logos{
+    padding-top: 0.4em;
+    padding-right: 0.5  em;
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: end;   
+}
+
+.resume__body{
+    grid-area: body;
+}
+
+.resume__logos img{
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.resume__logos img+img{
+    margin-top: 1em;
+}
+
+#lycee-parc .resume__logos img,
+#sony .resume__logos img,
+#innerspace .resume__logos img{
+    max-height: 45px;
+    max-width: 45px;
+}
+
+.resume__date-logo,
+.resume__location-logo{
+    color: var(--clr-accent)
+}
+
+@media (min-width: 800px){
+
+    .resume__block{
+        margin-top: 4em;
+    }
+    .resume__subsection{
+        padding-top: 0em;
+    }
+
+    .resume__item{
+        grid-template-columns: 0.7fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "logo title title"
+        "logo date location"
+        "logo body body";
+    }
+    
+    .resume__logos{
+        margin-right: 2em;
+    }
+
+    .resume__logos img{
+        max-height: 75px;
+        max-width: 75px;
+    }
+    
+    .resume__logos img+img{
+        margin-top: 1em;
+    }
+    
+    #lycee-parc .resume__logos img,
+    #sony .resume__logos img,
+    #innerspace .resume__logos img{
+        max-height: 60px;
+        max-width: 60px;
+    }
+
+    .resume__block{
+        display: grid;
+        background:linear-gradient(var(--clr-dark),var(--clr-dark)) center/2px 100% no-repeat;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        column-gap: 7em;
+    }
+
+}

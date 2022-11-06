@@ -27,16 +27,16 @@ function HandleScrollPorftolioWork(){
     }
     **/
 
-    var portfolioItems = document.getElementsByClassName('portfolio__item');
+    var portfolioItems = document.getElementsByClassName('my-work__item');
 
     console.log('Item: ' + window.scrollY);
     Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
         
         if ((startfocus > (portfolioItem.offsetTop + portfolioItem.offsetHeight) && stopfocus<(portfolioItem.offsetTop))){
-            portfolioItem.classList.add('portfolio-item-focus');
+            portfolioItem.classList.add('my-work__item--focus');
         }
         else{
-            portfolioItem.classList.remove('portfolio-item-focus');
+            portfolioItem.classList.remove('my-work__item--focus');
         }
     });
 };

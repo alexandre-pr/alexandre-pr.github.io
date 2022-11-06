@@ -12,6 +12,11 @@
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Source+Code+Pro:400,700&display=swap">
         
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_home.css">
+        <link rel="stylesheet" href="css/style_work.css">
+        <link rel="stylesheet" href="css/style_about.css">
+        <link rel="stylesheet" href="css/style_skills.css">
+        <link rel="stylesheet" href="css/style_resume.css">
 
         <!-- Scripts -->
         <script
@@ -25,47 +30,6 @@
     </head>
 
     <body>
-
-        <!-- <header>
-            <div class="logos-header">
-                <ul class="logos-header__list">
-                    <li class="logos-header__item">
-                        <img src="ressources/images/Logos/Polytechnique_black.svg" alt="Logo polytechnique" class="logos-header__img  logos-header__img--polytechnique"/>
-                    </li>
-
-                    <li class="logos-header__item">
-                        <img src="ressources/images/Logos/Cnam_black.svg" alt="Logo cnam" class="logos-header__img  logos-header__img--cnam"/>
-                    </li>
-
-                    <li class="logos-header__item">
-                        <img src="ressources/images/Logos/Gobelins_black.svg" alt="Logo gobelins" class="logos-header__img  logos-header__img--gobelins"/>
-                    </li>
-                </ul>
-            </div>
-            
-            
-
-            <nav class="nav">
-                <div class="nav__toggle">
-                    <button class="nav-toggle" aria-label="nav toggle button">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-                
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html#home" class="nav__link"><span class="nav__link-text">Home</span></a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link"><span class="nav__link-text">My Work</span></a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link"><span class="nav__link-text">About me</span></a></li>
-                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Skill</a></li>
-                    <li class="nav__item"><a href="index.html#education" class="nav__link">Education</a></li>
-                    <li class="nav__item"><a href="index.html#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <script src="js/header.js"></script> -->
-
-
         <div id="loaded_header"></div>
 
 
@@ -102,63 +66,63 @@
 
         <!-- My work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
+            <h2 class="section__title">My Work</h2>
             
-            <div class="portfolio">
+            <div class="my-work__portfolio">
             <!-- Portfolio item 01 -->
-                <a href="portfolio-item_amon.html" class="portfolio__item portfolio-item--full-width" id="amon">
-                    <div class="portfolio__title">
+                <a href="portfolio-item_amon.html" class="my-work__item my-work__item--full-width" id="work-amon">
+                    <div class="my-work__item-title">
                         <h2>Amon</h2>
                         <p>3D/2D Art, Dev <br> 2022</p>
                         
                     </div> 
-                    <img src="ressources/images/Games/Amon/work__amon.png" alt="amon, a young boy, holding a sheep" class="portfolio__img portfolio__img--full-width portfolio__img--amon">
+                    <img src="ressources/images/Games/Amon/work__amon.png" alt="amon, a young boy, holding a sheep" class="my-work__img">
                 </a>
 
             <!-- Portfolio item 05 -->
-            <a href="portfolio-item_vfx.html" class="portfolio__item" id="vfx">
-                <div class="portfolio__title">
+            <a href="portfolio-item_vfx.html" class="my-work__item" id="work-vfx">
+                <div class="my-work__item-title">
                     <h2>VFX</h2>
                     <p>Real Time Visual Effects</p>
                 </div> 
-                <img src="ressources/images/VFX/work__vfx.png" alt="vfx" class="portfolio__img">
+                <img src="ressources/images/VFX/work__vfx.png" alt="vfx" class="my-work__img">
             </a>
 
             <!-- Portfolio item 05 -->
-            <a href="portfolio-item_illustrations.html" class="portfolio__item" id="illustrations">
-                <div class="portfolio__title">
+            <a href="portfolio-item_illustrations.html" class="my-work__item" id="work-illustrations">
+                <div class="my-work__item-title">
                     <h2>Illustrations</h2>
                     <p>2D Art</p>
                 </div> 
-                <img src="ressources/images/Illustration/work__illustrations.png" alt="arthur" class="portfolio__img">
+                <img src="ressources/images/Illustration/work__illustrations.png" alt="arthur" class="my-work__img">
             </a>
 
             <!-- Portfolio item 02 -->
-            <a href="portfolio-item_moodseed.html" class="portfolio__item" id="moodseed">
-                <div class="portfolio__title">
+            <a href="portfolio-item_moodseed.html" class="my-work__item" id="work-moodseed">
+                <div class="my-work__item-title">
                     <h2>MoodSeed</h2>
                     <p>3D/2D Art<br> 2022</p>
                 </div> 
-                <img src="ressources/images/Games/MoodSeed/work__moodseed.png" alt="Mood Seed, a connected object" class="portfolio__img">
+                <img src="ressources/images/Games/MoodSeed/work__moodseed.png" alt="Mood Seed, a connected object" class="my-work__img">
             </a>
 
         
             <!-- Portfolio item 04 -->
-            <a href="portfolio-item_sunkpearl.html" class="portfolio__item" id="sunkpearl">
-                <div class="portfolio__title">
+            <a href="portfolio-item_sunkpearl.html" class="my-work__item" id="work-sunkpearl">
+                <div class="my-work__item-title">
                     <h2>Sunk Pearl</h2>
                     <p>3D Art, Dev <br> 2021</p>
                 </div> 
-                <img src="ressources/images/Games/SunkPearl/work__sunkpearl.png" alt="arthur" class="portfolio__img">
+                <img src="ressources/images/Games/SunkPearl/work__sunkpearl.png" alt="arthur" class="my-work__img">
             </a>
 
              <!-- Portfolio item 03 -->
-             <a href="portfolio-item_domos.html" class="portfolio__item" id="domos">
-                <div class="portfolio__title">
+             <a href="portfolio-item_domos.html" class="my-work__item" id="work-domos">
+                <div class="my-work__item-title">
                     <h2>Domos</h2>
                     <p>2D Art, Dev <br> 2021</p>
                 </div> 
-                <img src="ressources/images/Games/Domos/work__domos.png" alt="arthur" class="portfolio__img">
+                <img src="ressources/images/Games/Domos/work__domos.png" alt="arthur" class="my-work__img">
             </a>
 
 
@@ -170,7 +134,7 @@
 
         <!-- About me --> 
         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">About me</h2>
+            <h2 class="section__title">About me</h2>
 
             <div class="about-me__body">
                 <p>Hi, I'm Alexandre!</p> 
@@ -193,131 +157,140 @@
             </div>
             
             <div class="about-me__buttons">
-                <a href="#skills" class="btn btn--about">Skills</a>
-                <a href="#education" class="btn btn--about">Education</a>
-                <a href="#experience" class="btn btn--about">Experience</a>
+                <a href="#skills" class="btn">Skills</a>
+                <a href="#education" class="btn mobile">Education</a>
+                <a href="#experience" class="btn mobile">Experience</a>
+                <a href="#resume" class="btn desktop">Resume</a>
             </div>
         </section>
 
 
         <!-- My Services -->
-        <section class="my-skills" id="skills">
-            <h2 class="section__title section__title--skills">Skills</h2>
-            <div class="skills">
-                <img src="ressources/images/Logos/3D.svg" alt="Logo 3D" class="skill__img skill__img--1"/>
-                <h3 class="section__subtitle section__subtitle--skills skill__title skill__title--1">3D Art </h3>
-                <div class="skill__body skill__body--1"><p>3D modeling (Blender, ZBrush, Substance Designer/Painter)</p>
-                <p>Technical art (Computer graphics and procedural animation) </p>
-                <p>Visual Effects (VFX)</p>
-                </p></div> <!-- / service -->
-
+        <section class="skills" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <div class="skills__block">
+                    <img src="ressources/images/Logos/3D.svg" alt="Logo 3D" class="skills__logo" id="skill1-logo"/>
+                    <h3 class="section__subtitle skills__title" id="skill1-title">Technical Art</h3>
+                    <div class="skills__body" id="skill1-body">
+                    <p>Computer graphics and rendering (HLSL)</p>
+                    <p>Procedural modeling (Houdini)</p>
+                    <p>Procedural animation</p>
+                    </div> <!-- / service -->
                 
-                <img src="ressources/images/Logos/draw.svg" alt="Logo Graphic tablet" class="skill__img skill__img--2"/>
-                <h3 class="section__subtitle section__subtitle--skills skill__title skill__title--2">2D Art </h3>
-                <div class="skill__body skill__body--2">
-                    <p>Digital paiting, Illustration</p>
-                    <p>Concept Art</p>
-                </div> <!-- / service -->
+                    <img src="ressources/images/Logos/draw.svg" alt="Logo Graphic tablet" class="skills__logo" id="skill2-logo"/>
+                    <h3 class="section__subtitle skills__title" id="skill2-title">Game Art </h3>
+                    <div class="skills__body" id="skill2-body">
+                        <p>3D modeling (Blender, ZBrush, Substance Designer/Painter)</p>
+                        <p>Real-time Visual Effects (VFX)</p>
+                        <p>Concept Art, Illustration</p>
+                        
+                    </div> <!-- / service -->
 
-                <img src="ressources/images/Logos/Code.svg" alt="Logo computer programming" class="skill__img skill__img--3"/>
-                <h3 class="section__subtitle section__subtitle--skills skill__title skill__title--3">Game programming</h3>
-                <div class="skill__body skill__body--3"><p>Unity 3D / C#</p> 
-                    <p>Unreal Engine 4 / C++</p> 
-                </div> <!-- / service -->
-
+                    <img src="ressources/images/Logos/Code.svg" alt="Logo computer programming" class="skills__logo" id="skill3-logo"/>
+                    <h3 class="section__subtitle skills__title" id="skill3-title">Game programming</h3>
+                    <div class="skills__body" id="skill3-body"><p>Unity 3D / C#</p> 
+                        <p>Unreal Engine 4 / C++</p> 
+                    </div> <!-- / service -->
             </div> <!-- / services-->
 
         </section>
 
 
         <!-- My Education -->
-        <section class="my-education" id="education">
-            <h2 class="section__title section__title--education">Education</h2>
-            <div class="educations">
+        <section class="resume" id="resume">
+            
+            <h2 class="section__title">Resume</h2>
+            <a href="ressources/other/resume.pdf" class="link">Download my full resume </a>
+            
+            <div class="resume__block">
+            <div class="resume__subsection" id="education">
+            <h3 class="section__subtitle">Education</h3>
+            <div class="resume__items"> 
 
-                <div class="education">
-                    <div class="education__logos">
+                <div class="resume__item">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/Cnam.svg" alt="Logo Cnam"/> 
-                    </div><div class="education__title">
+                    </div>
+                    <div class="resume__title">
                         <h2>Master's degree, Games and interactive digital media</h2>
                         <h3>Cnam-Enjmin</h3>
-                        </div>
-                        <div class="education__date">
-                            <i class="fa-solid fa-calendar-days education__date__logo"></i>
+                    </div>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2022-2023</p>
                         </div>
-                        <div class="education__location">
-                            <i class="fa-solid fa-location-dot education__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Angoulême, France</p>
                         </div>
-                        <div class="education__body">
+                        <div class="resume__body">
                         <ul><li><p>Game programing track.</p></li>
                         </ul>
                         </div>
                 </div> <!-- / service -->
 
-                <div class="education">
-                    <div class="education__logos">
+                <div class="resume__item">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/Gobelins.svg" alt="Logo Gobelins"/> 
                         <img src="ressources/images/Logos/Cnam.svg" alt="Logo Cnam"/> 
-                    </div><div class="education__title">
+                    </div><div class="resume__title">
                             <h2>Specialized master's degree, Interactive Digital Experience Design</h2>
                             <h3>Gobelins, Cnam-Enjmin</h3>
                         </div>
-                        <div class="education__date">
-                            <i class="fa-solid fa-calendar-days education__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2021-2022</p>
                         </div>
-                        <div class="education__location">
-                            <i class="fa-solid fa-location-dot education__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Paris, France</p>
                         </div>
-                        <div class="education__body">
+                        <div class="resume__body">
                             <ul><li><p>Masterclasses on a big range of subjects (Game design, Level design, UX design, Narrative design).</p></li>
                                 <li><p>Numerous game and interactive experience conception team projects.</p></li>
                             </ul>
                     </div></div>  <!-- / service -->
 
-                <div class="education">
-                    <div class="education__logos">
+                <div class="resume__item">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/Polytechnique.svg" alt="Logo Polytechnique"/> 
                     </div>
-                        <div class="education__title">
+                        <div class="resume__title">
                         <h2>Engineering degree (master), A.I and Computer graphics</h2>
                         <h3>Ecole polytechnique</h3>
                         </div>
-                        <div class="education__date">
-                            <i class="fa-solid fa-calendar-days education__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2018-2023</p>
                         </div>
-                        <div class="education__location">
-                            <i class="fa-solid fa-location-dot education__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Palaiseau, France</p>
                         </div>
-                        <div class="education__body">
+                        <div class="resume__body">
                             <ul><li><p>Computer graphics and Artificial intelligence track (Computer Animation, Image Synthesis, Computer Vision, Reinforcment Learning...).</p></li>
                                 <li><p>Other classes include: Theoretical Physics, Fluid Mechanics, Mathematics, Humanities (painting, animation, cognitive science). </p></li>
                             </ul>
                         </div>
                 </div> <!-- / service -->
 
-                <div class="education">
-                    <div class="education__logos education__logos--lycee-parc">
+                <div class="resume__item" id="lycee-parc">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/LycéeParc.svg" alt="Logo Parc"/> 
                     </div>
-                        <div class="education__title">
+                        <div class="resume__title">
                         <h2>Intensive scientific training for competitive entry to top tier engineering schools</h2>
                         <h3>Lycée du Parc</h3>
                         </div>
-                        <div class="education__date">
-                            <i class="fa-solid fa-calendar-days education__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2016-2018</p>
                         </div>
-                        <div class="education__location">
-                            <i class="fa-solid fa-location-dot education__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Lyon, France</p>
                         </div>
-                        <div class="education__body">
+                        <div class="resume__body">
                             <ul><li><p>Mathematics, Physics and Computer Science.</p></li>
                             </ul>
                             </div>
@@ -326,109 +299,105 @@
 
             </div> <!-- / services-->
 
-        </section>
-
         
+            <div class="resume__subsection" id="experience">
+                <h3 class="section__subtitle">Experience</h3>
+            <div class="resume__items">
 
-        <!-- My Experience -->
-        <section class="my-experience" id="experience">
-            <h2 class="section__title section__title--experience">Experience</h2>
-            <div class="experiences">
-
-                <div class="experience">
-                    <div class="experience__logos">
+                <div class="resume__item" id="innerspace">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/innerspace.png" alt="Logo Innerspace"/> 
                     </div>
-                        <div class="experience__title">
+                        <div class="resume__title">
                         <h2>VR Programmer intern</h2>
                         <h3>Innerspace VR</h3>
                         </div>
-                        <div class="experience__date">
-                            <i class="fa-solid fa-calendar-days experience__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2022 (4 months)</p>
                         </div>
-                        <div class="experience__location">
-                            <i class="fa-solid fa-location-dot experience__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Saint-Ouen, France</p>
                         </div>
-                        <div class="experience__body">
+                        <div class="resume__body">
                             <ul><li><p>Gameplay programming on VR game projects in Unreal Engine 4.</p></li>
                             </ul>
                     </div>
                 </div> <!-- / experience -->
 
-                <div class="experience">
-                    <div class="experience__logos">
-                        <img src="ressources/images/Logos/SonyCSL.png" alt="Logo CSL"/> 
+                <div class="resume__item" id="sony">
+                    <div class="resume__logos">
+                        <img src="ressources/images/Logos/SonyCSL.png" alt="Logo CSL" id="logo-sony"/> 
                     </div>
-                        <div class="experience__title">
+                        <div class="resume__title">
                         <h2>AI Research Intern</h2>
                         <h3>Sony Computer Science Laboratories</h3>
                         </div>
-                        <div class="experience__date">
-                            <i class="fa-solid fa-calendar-days experience__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2021 (5 months)</p>
                         </div>
-                        <div class="experience__location">
-                            <i class="fa-solid fa-location-dot experience__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Paris, France</p>
                         </div>
-                        <div class="experience__body">
+                        <div class="resume__body">
                             <ul><li><p>Conducted experiments on self-supervised learning neural networks for music synthesis applications.</p></li>
                             </ul>
                     </div>
                 </div> <!-- / experience -->
 
 
-                <div class="experience">
-                    <div class="experience__logos">
+                <div class="resume__item">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/Fujitsu.svg" alt="Logo Fujitsu"/> 
                     </div>
-                        <div class="experience__title">
+                        <div class="resume__title">
                         <h2>AI Development Intern</h2>
                         <h3>Fujitsu Digital Business Solutions</h3>
                         </div>
-                        <div class="experience__date">
-                            <i class="fa-solid fa-calendar-days experience__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2020 (3 months)</p>
                         </div>
-                        <div class="experience__location">
-                            <i class="fa-solid fa-location-dot experience__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Palaiseau, France</p>
                         </div>
-                        <div class="experience__body">
+                        <div class="resume__body">
                             <ul><li><p>Developed Object Detection and Tracking APIs using neural networks.</p></li>
                             </ul>
                         </div>
                 </div> <!-- / experience -->
 
 
-                <div class="experience">
-                    <div class="experience__logos">
+                <div class="resume__item">
+                    <div class="resume__logos">
                         <img src="ressources/images/Logos/Valdocco.png" alt="Logo Valdocco"/> 
                     </div>
-                        <div class="experience__title">
+                        <div class="resume__title">
                         <h2>Education and Tutoring Intern</h2>
                         <h3>Le Valdocco Argenteuil</h3>
                         </div>
-                        <div class="experience__date">
-                            <i class="fa-solid fa-calendar-days experience__date__logo"></i>
+                        <div class="resume__date">
+                            <i class="fa-solid fa-calendar-days resume__date-logo"></i>
                             <p>2018-2019 (6 months)</p>
                         </div>
-                        <div class="experience__location">
-                            <i class="fa-solid fa-location-dot experience__location__logo"></i>
+                        <div class="resume__location">
+                            <i class="fa-solid fa-location-dot resume__location-logo"></i>
                             <p>Argenteuil, France</p>
                         </div>
-                        <div class="experience__body">
+                        <div class="resume__body">
                             <ul><li><p>Designed, organized and hosted workshops, cultural trips and academic tutoring for a hundred of children and teenagers from underpriviledged areas.</p></li>
                             </ul>
                         </div>
                 </div> <!-- / experience -->
-
+            </div>
                 
 
             </div> <!-- / services-->
-
+        </div>
         </section>
 
         <div id="loaded_footer"></div>

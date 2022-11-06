@@ -1,0 +1,92 @@
+
+/* About me */
+
+.about-me{
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.about-me__img-block{
+    max-width: 350px;
+    margin: 2em auto 0;
+}
+
+.about-me__img{
+    box-shadow: var(--bs);
+}
+
+.about-me__buttons{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-self: end;
+    margin-top: 2em;
+}
+
+.about-me__buttons .btn{
+    width: 8em;
+}
+
+.about-me__buttons .btn + .btn{
+    margin-top: 1em;
+}
+/**
+#about .section__subsubtitle{
+    
+    text-align: right;
+    margin-top: 0;
+}**/
+
+@media(min-width: 600px){
+    .about-me{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-areas: 
+            "img title"
+            "img text"
+            "btns btns";
+            
+        column-gap: 2em;
+    }
+
+    #about .section__title{
+        grid-area: title;
+        align-self: center;
+        justify-self: start;
+        margin-right: 1em;
+    }
+
+    #about .section__title::after{
+        content: none;
+    }
+
+    .about-me__img-block{
+        grid-area: img;
+        align-self: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-me__img{
+        object-fit: cover;
+        margin: 0em;
+        height: calc(100% - 1em);
+    }
+
+    .about-me__buttons{
+        grid-area: btns;
+        flex-direction: row;
+        margin-top: 3em;
+    }
+
+    
+    .about-me__buttons .btn{
+        width: 7em;
+    }
+
+
+    .about-me__buttons .btn + .btn{
+        margin-top: 0em;
+    }
+}

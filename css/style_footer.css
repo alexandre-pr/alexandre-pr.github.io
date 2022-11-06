@@ -1,21 +1,29 @@
 
 /* Footer */
 .footer{
-    background: var(--clr-dark);
     color:var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
-    height: calc(min(100vh - var(--header-height), 100%));
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: var(--ff-secondary);
 }
 
+.footer__block{
+    
+    background: var(--clr-dark);
+    margin-top: var(--header-height);
+    padding-top: 2em;
+    min-height: calc(100% - var(--header-height))
+}
+
 .footer .btn{
     margin-top: 1em;
     width: fit-content;
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
 }
 
 .footer__content{
