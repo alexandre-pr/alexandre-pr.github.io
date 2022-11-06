@@ -18,8 +18,9 @@
 
    --clr-light: #fff;
    --clr-dark: #303030;
-   --clr-accent: #ff847c;
-   --clr-accent-light: #ffc8c3;
+   --clr-accent-light: #ff847c;
+   --clr-accent: #ff756b;
+   /**--clr-accent-light: #ff847c;**/
 
    --fs-h1:3rem;
    --fs-h2:2.25rem;
@@ -224,20 +225,6 @@ h3{
     text-decoration: underline;
 }
 
-.desktop{
-    display:none;
-}
-
-@media (min-width: 800px){
-.desktop{
-    display: inherit;
-}
-
-.mobile{
-    display: none;
-}
-
-}
 
 
 
