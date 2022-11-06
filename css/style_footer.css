@@ -17,7 +17,7 @@
     background: var(--clr-dark);
     margin-top: var(--header-height);
     padding-top: 2em;
-    min-height: calc(100% - var(--header-height))
+    min-height: calc(100vh - var(--header-height))
 }
 
 .footer .btn{
