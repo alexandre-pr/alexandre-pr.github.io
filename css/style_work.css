@@ -104,9 +104,12 @@
     top:0;
 }
 
+
 .my-work__item--full-width .my-work__img{
+    height: 100%;
     object-position: 20%;
 }
+
 
 .my-work__item:focus{
     position: relative;
@@ -146,7 +149,6 @@
 
     .my-work__item--full-width{
         grid-column: 1/-1;
-        width: 100%;
     }
 
 
