@@ -30,3 +30,17 @@ function watchForHover() {
   }
   
 watchForHover()
+
+var portfolioItems = document.getElementsByClassName('video__speed1-5');
+
+    //console.log('Item: ' + window.scrollY);
+Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
+    portfolioItem.playbackRate = 1.5;
+});
+
+var portfolioItems = document.getElementsByClassName('video__speed2');
+
+    //console.log('Item: ' + window.scrollY);
+Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
+    portfolioItem.playbackRate = 2;
+});

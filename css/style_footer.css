@@ -74,19 +74,26 @@
     margin: 0 0.5em;
     width: calc(var(--fs-h2)*1.8);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.footer__social-item p{
+    text-align: center;
+    margin-top: 0;
+    font-size: calc(var(--fs-body) * 0.8);
 }
 
 .footer__social-link{
     margin: auto;
     display: flex;
     font-size: var(--fs-h2);
-    padding: .5em;
-    transition: font-size 200ms ease-in-out;
+    padding: 0;
+    transition: scale 200ms ease-in-out;
 }
 
 .footer__social-link:hover{
-    font-size: calc(1.1*var(--fs-h2));
+    scale: 1.1;
 }
 
 .footer__form{
