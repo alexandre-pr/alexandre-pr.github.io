@@ -1,3 +1,14 @@
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100;
+    }
+  }
+
 
 /* Home */
 
@@ -5,7 +16,7 @@
     position: relative;
     background-color: var(--clr-dark);
     background-image: 
-    linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
+    linear-gradient(to right, rgba(0, 54, 107, 0.9), rgba(0, 72, 138, 0.7) 45%, rgba(0, 115, 222, 0.5)),
     url(../ressources/images/Games/Amon/home__amon.png);
     min-height: 100vh;
     background-size: cover;
@@ -64,9 +75,11 @@
 .home__name{
     font-size: 4em;
     font-weight: var(--fw-light);
+    opacity: 0;
+    
+    animation: 1s ease-out 250ms 1 slideInFromRight;
+    animation-fill-mode: forwards;
 }
-
-
 
 
 .home__lastname{
@@ -74,12 +87,18 @@
     font-weight: var(--fw-reg);
     text-transform:uppercase;
     padding-left: 0.25em;
+    opacity: 0;
+    animation: 1s ease-out 250ms 1 slideInFromRight;
+    animation-fill-mode: forwards;
 }
 
 #home .section__subtitle{
     padding-top: 0.2em;
     padding-left: 1em;
-    color: var(--clr-accent-light);
+    color: var(--clr-accent);
+    opacity: 0;
+    animation: 1s ease-out 400ms 1 slideInFromRight;
+    animation-fill-mode: forwards;
 }
 
 .home__buttons{
@@ -103,7 +122,7 @@
 @media (min-width: 800px){
     .home{
         background-image: 
-            linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
+            linear-gradient(to right, rgba(0, 34, 67, 0.9),rgba(0, 68, 137, 0.7) 25%, rgba(0, 85, 165, 0.5) 35%, rgba(0, 115, 222, 0.3) 60%, rgba(0, 115, 222, 0.05)),
             url(../ressources/images/Games/Amon/home__amon.png);
     }
 

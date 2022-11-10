@@ -22,6 +22,10 @@
     opacity: 0.25;
 }
 
+.skills__title{
+    color: var(--clr-accent-light)
+}
+
 .skills__block{
     margin-bottom: 4em;
 } 
@@ -44,7 +48,7 @@
     max-height: 10vh;
     max-width: 50%;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 1em; 
 }
 
 .skills__block .skills__body + .skills__logo {

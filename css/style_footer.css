@@ -1,7 +1,7 @@
 
 /* Footer */
 .footer{
-    color:var(--clr-accent);
+    color:var(--clr-accent-light);
     text-align: center;
     padding-top: 0;
     padding-bottom: 0;
@@ -23,7 +23,7 @@
 .footer .btn{
     margin-top: 1em;
     width: fit-content;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
 }
 
 .footer__content{
@@ -130,4 +130,11 @@
         justify-content: center;
     }
 
+
+    
+    .footer .btn{
+        margin-top: 1em;
+        width: fit-content;
+        font-size: var(--fs-h3);
+    }
 }

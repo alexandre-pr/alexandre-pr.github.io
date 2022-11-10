@@ -28,6 +28,8 @@ header{
     position: fixed;
     top:0;
     transition: color 250ms cubic-bezier(.5, 0, .5, 1);
+
+    animation: fadeIn 250ms ease-out;
     
 }
 
@@ -218,7 +220,7 @@ header{
     }
 
     .nav__link:hover{
-        color:var(--clr-accent-light);
+        color:var(--clr-accent-very-light);
     }
 
     .light-background .nav__link:hover{

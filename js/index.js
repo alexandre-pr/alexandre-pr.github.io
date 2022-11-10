@@ -13,8 +13,8 @@ const illustrationsBlock = document.getElementById('illustrations');
 function HandleScrollPorftolioWork(){
     var headerBlock = document.getElementsByClassName('header__logos')[0];
     
-    var startfocus = window.scrollY + 0.85 * window.innerHeight;
-    var stopfocus = window.scrollY + 0.15 * window.innerHeight;
+    var startfocus = window.scrollY + 0.75 * window.innerHeight;
+    var stopfocus = window.scrollY + 0.25 * window.innerHeight;
 
     /**if(headerBlock != null){
         var top = window.scrollY + headerBlock.offsetHeight;
@@ -29,14 +29,22 @@ function HandleScrollPorftolioWork(){
 
     var portfolioItems = document.getElementsByClassName('my-work__item');
 
-    console.log('Item: ' + window.scrollY);
+    //console.log('Item: ' + window.scrollY);
     Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
-        
-        if ((startfocus > (portfolioItem.offsetTop + portfolioItem.offsetHeight) && stopfocus<(portfolioItem.offsetTop))){
+        var portfolioVideo = portfolioItem.getElementsByClassName('my-work__video');
+
+        if ((startfocus > (portfolioItem.offsetTop) && stopfocus<(portfolioItem.offsetTop + portfolioItem.offsetHeight))){
+            
+            if (portfolioVideo.length>0){
+                portfolioVideo[0].play();
+            }
             portfolioItem.classList.add('my-work__item--focus');
         }
         else{
             portfolioItem.classList.remove('my-work__item--focus');
+            if (portfolioVideo.length>0){
+                portfolioVideo[0].pause();
+            }
         }
     });
 };
