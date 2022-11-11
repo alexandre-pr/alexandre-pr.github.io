@@ -11,6 +11,13 @@
     background-color: var(--clr-light);
 }
 
+
+#work .section__subtitle{
+    color:var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
 .my-work__portfolio{
     display: grid;
     grid-template-columns: 1fr;
@@ -30,6 +37,10 @@
     height: 100%;
     width: 100%;
     aspect-ratio: calc(8/7);
+}
+
+.my-work__item h2{
+    font-size: var(--fs-h2-5);
 }
 
 .my-work__item-content{
@@ -74,6 +85,7 @@
 .my-work__item-title p{
     font-family: var(--ff-secondary);
     margin-left: 0em;
+    margin-top: 0.2em;
 }
 
 .my-work__medias{
@@ -122,9 +134,17 @@
 }
 
 .my-work__item:hover .my-work__img,
-.my-work__item:focus .my-work__img{
+.my-work__item:focus .my-work__img
+.no-hover .my-work__item--focus .my-work__img{
     /* transform: scale(1.2); */
     opacity: 0;
+}
+
+.my-work__item:hover .my-work__medias--no-video .my-work__img,
+.my-work__item:focus .my-work__medias--no-video .my-work__img
+.no-hover .my-work__medias--no-video .my-work__item--focus .my-work__img{
+    /* transform: scale(1.2); */
+    opacity: 1;
 }
 
 .my-work__item:hover .my-work__medias{
@@ -134,7 +154,9 @@
 .my-work__item:hover .my-work__item-title,
 .my-work__item:focus .my-work__item-title,
 .my-work__item:hover .my-work__more,
-.my-work__item:focus .my-work__more
+.my-work__item:focus .my-work__more,
+.no-hover .my-work__item--focus .my-work__item-title,
+.no-hover .my-work__item--focus .my-work__more
 {
     opacity: 1;
     transform: translateX(0%);
@@ -159,7 +181,7 @@
 
     .my-work__item-title,
     .my-work__more{
-        padding: 2em;
+        padding: 1.5em;
     }
 
     .my-work__more{
@@ -178,22 +200,4 @@
 
 @media(hover:none){
 
-}
-
-.no-hover .my-work__item--focus .my-work__img{
-    /**transform: scale(1.2);**/
-    opacity: 0.0;
-}
-
-.no-hover .my-work__item--focus .my-work__item-title,
-.no-hover .my-work__item--focus .my-work__more
-{
-    opacity: 1;
-    transform: translateX(0%);
-}
-
-#work .section__subtitle{
-    color:var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
 }

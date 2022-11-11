@@ -552,7 +552,7 @@ h3{
     background-color: var(--clr-light);
     margin-top: auto;
     margin-bottom: auto;
-    object-fit: contain;
+    object-fit: cover;
     order:1;
     max-height: 100%;
     max-width: 100%;
