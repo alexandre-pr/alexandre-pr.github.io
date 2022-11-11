@@ -115,10 +115,10 @@ section{
 }
 
 .btn{
-    display: inline-block;
+    display: flex;
     padding: 0 1.0em;
     margin: 0 auto;
-
+    vertical-align: middle;
 
     background: var(--clr-accent);
     color: var(--clr-light);
@@ -130,6 +130,9 @@ section{
     letter-spacing: 2px;
     font-weight: var(--fw-reg);
     transition: transform 200ms ease-in-out;
+
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 
     width: fit-content;
 
@@ -271,195 +274,8 @@ h3{
 
 
 
-/* Item Page*/
-
-/* Home */
-.item-page-home{
-    position: relative;
-    background-color: var(--clr-dark);
-    background-image: 
-    linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
-    url(../ressources/images/Games/Amon/page-home__amon2.png);
-    min-height: 100vh;
-    background-size: cover;
-    color: var(--clr-light);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 2em;
-    
-}
-
-.item-page-home--amon{
-    background-position: 95%;
-}
 
 
-
-.item-page-home-title{
-    font-size: 4rem;
-    font-weight: var(--fw-light);
-}
-
-@media (min-width: 800px){
-
-    .item-page-home-title{
-        font-size: 6rem;
-    }
-    
-    .item-page-home--amon{
-        background-position: 90%;
-    }
-}
-
-.item-page-home__title{
-    padding-top: 5vh;
-}
-
-.item-page-home__title img{
-    max-width: 600px;
-    filter: var(--filter-white);
-}
-
-.section__subtitle--item-page-home{
-    padding-top: 0.2em;
-    padding-left: 0.5em;
-    text-shadow: var(--ts);
-
-}
-
-.item-page-home__buttons{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-}
-
-
-@media (min-width: 800px){
-    .item-page-home{
-        background-image: 
-            linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
-            url(../ressources/images/Games/Amon/page-home__amon2.png);
-    }
-
-    .item-page-home__title{
-        padding-left: 3vw;
-    }
-
-    .btn--item-page-home{
-        margin-left: auto;
-        
-        display: block;
-        width: fit-content;
-    }
-
-    .btn--item-page-home + .btn--item-page-home{
-        margin-left: min(50%, 6em);
-    }
-
-    .item-page-home__buttons{
-        flex-direction: row;
-    }
-}
-
-/* Intro */
-
-.item-page-intro{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.item-page-intro__description{
-    margin-bottom: 2em;
-}
-
-.btn--item-page-intro{
-    width: 9em;
-}
-
-.section__title--item-page-intro{
-    font-weight: var(--fw-reg);
-    font-size: var(--fs-h2-5);
-    text-align: right;
-    width: 90%;
-    margin-left: auto;
-    margin-right: 0;
-    
-}
-
-.section__title--item-page-intro::after{
-    content:none;
-}
-
-.item-page-intro__img{
-    max-height: 50vh;
-    position: relative;
-    margin-top: -1em;
-}
-
-.section__subtitle--item-page-intro{
-    font-size: var(--fs-h2-5);
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.section__subtitle--item-page-intro--amon{
-    padding-top: 2em;
-}
-
-.item-page-intro__buttons{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-}
-
-.section__subsubtitle--item-page-intro{
-    text-align: center;
-}
-
-@media (min-width: 800px){
-
-    .item-page-intro__description{
-        display: grid;
-        grid-template-columns: 1.3fr 0.7fr;
-        grid-template-areas: 
-        "title img"
-        "body img";
-    }
-
-    .section__title--item-page-intro{
-        text-align: left;
-        grid-area: title;
-        position: relative;
-        left: 0;
-        margin-left: 0;
-        right: -.5em;
-        width: calc(100% + 0.5em);
-    }
-
-    .item-page-intro__img{
-        grid-area: img;
-        transform: scale(-1, 1);
-        max-height: 70vh;
-    }
-
-    .item-page-intro__body{
-        grid-area: body;
-    }
-
-    .section__subtitle--item-page-intro{
-        font-size: var(--fs-h2);
-    }
-
-    .item-page-intro__buttons{
-        flex-direction: row;
-    }
-
-    .section__subsubtitle--item-page-intro{
-        font-size: calc(var(--fs-h3)*0.8);
-    }
-}
 
 
 
@@ -852,7 +668,7 @@ h3{
 }
 
 .back-buttons{
-    margin-top: 10em;
+    margin-top: 3em;
 }
 
 

@@ -1,0 +1,36 @@
+#amon .item-page-home{
+    background-position: 95%;
+
+    background-image: 
+    linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
+    url(../ressources/images/Games/Amon/page-home__amon2.png);
+}
+
+#amon .section__subtitle{
+    padding-top: 0em;
+}
+
+
+@media (min-width: 800px){
+    
+    #amon .item-page-home{
+        background-image: 
+            linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
+            url(../ressources/images/Games/Amon/page-home__amon2.png);
+    }
+
+    #amon .item-page-home{
+        background-position: 90%;
+    }
+
+    
+    #amon .item-page-intro__img{
+        max-height: 100%;
+    }
+
+    #amon .item-page-intro{
+        max-width: 900px;
+    }
+}
+
+

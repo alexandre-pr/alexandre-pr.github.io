@@ -12,7 +12,7 @@
 }
 
 
-#work .section__subtitle{
+.my-work .section__subtitle{
     color:var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
