@@ -91,8 +91,8 @@
 .my-work__medias{
     opacity: 1;
     transition: opacity 250ms linear;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .my-work__media{
@@ -123,7 +123,6 @@
 }
 
 .my-work__item--full-width .my-work__img{
-    height: 100%;
     object-position: 20%;
 }
 
@@ -134,20 +133,22 @@
 }
 
 .my-work__item:hover .my-work__img,
-.my-work__item:focus .my-work__img
+.my-work__item:focus .my-work__img,
 .no-hover .my-work__item--focus .my-work__img{
     /* transform: scale(1.2); */
     opacity: 0;
 }
 
 .my-work__item:hover .my-work__medias--no-video .my-work__img,
-.my-work__item:focus .my-work__medias--no-video .my-work__img
-.no-hover .my-work__medias--no-video .my-work__item--focus .my-work__img{
+.my-work__item:focus .my-work__medias--no-video .my-work__img,
+.no-hover .my-work__item--focus .my-work__medias--no-video .my-work__img{
     /* transform: scale(1.2); */
     opacity: 1;
 }
 
-.my-work__item:hover .my-work__medias{
+.my-work__item:hover .my-work__medias,
+.my-work__item:focus .my-work__medias,
+.no-hover .my-work__item--focus .my-work__medias{
     opacity: 0.4;
 }
 

@@ -116,8 +116,8 @@ section{
 
 .btn{
     display: flex;
-    padding: 0 1.0em;
-    margin: 0 auto;
+    flex: 1 1 0;
+    padding: 0.2em 0.5em;
     vertical-align: middle;
 
     background: var(--clr-accent);
@@ -128,17 +128,44 @@ section{
     font-size: 1.5rem;
     font-family: var(--ff-primary) ;
     letter-spacing: 2px;
+    line-height: 1em;
     font-weight: var(--fw-reg);
     transition: transform 200ms ease-in-out;
 
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
 
-    width: fit-content;
 
     animation: fadeIn 250ms ease-out;
+
+    /*white-space: nowrap;*/    
+    width: 100%;
+    min-width: 0;
 }
 
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0;
+}
+
+@media (min-width: 800px){
+    .buttons{
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        column-gap: calc(min(12em, 20vw - 1em));
+    }
+
+    .btn{
+        width: auto;
+    }
+}
 
 button, [type="button"], [type="reset"], [type="submit"] {
     

@@ -23,15 +23,16 @@
     background-position: center;
     color: var(--clr-light);
     padding-top: 0;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-bottom: 0.5em;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 2em;
+    row-gap: calc(min(2em, 7vh - 1em));
     
+    min-height: 100vh;
 }
 
 
@@ -43,11 +44,14 @@
     padding: 0 0 0;
     margin: 0;
     height: fit-content;
+    position: absolute;
+    left : 1em;
 }
 
 .home__education-logo{
     margin: 0 0.5em 0;
     padding: 0.5em 0 0.5em;
+    
 }
 
 .home__education-logo img {
@@ -63,8 +67,9 @@
 
 
 .home__title{
-    padding-top: 2%;
+    padding-top: 20vh;
     padding-left: 3%;
+    text-align: center;
 }
 
 .home__title h1{
@@ -86,7 +91,7 @@
     font-size: 6rem;
     font-weight: var(--fw-reg);
     text-transform:uppercase;
-    padding-left: 0.25em;
+    padding-left: 0;
     opacity: 0;
     animation: 1s ease-out 250ms 1 slideInFromRight;
     animation-fill-mode: forwards;
@@ -94,28 +99,18 @@
 
 #home .section__subtitle{
     padding-top: 0.2em;
-    padding-left: 1em;
+    padding-left: 0;
     color: var(--clr-accent);
     opacity: 0;
     animation: 1s ease-out 400ms 1 slideInFromRight;
     animation-fill-mode: forwards;
 }
 
-.home__buttons{
-    width: fit-content;
-    display: block;
-    margin: auto auto 5em;
+
+#home .buttons{
+    margin-bottom: clamp(0em, calc(15vh - 2em), 5em);
 }
 
-#home .btn{
-    display:block;
-    width: 100%;
-    margin: auto;
-}
-
-#home .btn + .btn{
-    margin-top: 2em;
-}
 
 
 
@@ -132,6 +127,7 @@
 
     .home__lastname{
         font-size: 8rem;
+        padding-left: 0.25em;
     }
 
     .home__left-section{
@@ -139,17 +135,32 @@
         padding:0;
     }
 
-    .home__buttons{
-        margin-left: auto;
-        margin-right: min(50%, 10em);
-        display: block;
-        width: fit-content;
+    .home__title{
+        padding-top: clamp(1em, calc(25vh - 2em) ,6em);
+        text-align: left;
     }
+
+    #home .section__subtitle{
+    padding-left: 1em;
+    }   
+
+    /* #home .buttons{
+        margin-bottom: clamp(0em, calc(10vh - 2em), 3em);
+        display: flex;
+        margin-right: clamp(0em, calc(10vh - 2em), 3em);
+    }
+
+
+    #home .btn{
+        width: 100%;
+    } */
 
 
     .home__education-logos-list{
         align-self: end;
         height: fit-content;
+        position: absolute;
+        left : auto;
     }
 
     .home__education-logo img {

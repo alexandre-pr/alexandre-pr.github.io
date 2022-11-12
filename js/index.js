@@ -13,8 +13,8 @@ const illustrationsBlock = document.getElementById('illustrations');
 function HandleScrollPorftolioWork(){
     var headerBlock = document.getElementsByClassName('header__logos')[0];
     
-    var startfocus = window.scrollY + 0.75 * window.innerHeight;
-    var stopfocus = window.scrollY + 0.25 * window.innerHeight;
+    var startfocus = window.scrollY + 0.6 * window.innerHeight;
+    var stopfocus = window.scrollY + 0.4 * window.innerHeight;
 
     /**if(headerBlock != null){
         var top = window.scrollY + headerBlock.offsetHeight;

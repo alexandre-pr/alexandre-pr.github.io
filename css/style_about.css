@@ -16,21 +16,10 @@
     box-shadow: var(--bs);
 }
 
-.about-me__buttons{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-self: end;
+.about-me .buttons{
     margin-top: 2em;
 }
 
-.about-me__buttons .btn{
-    width: 8em;
-}
-
-.about-me__buttons .btn + .btn{
-    margin-top: 1em;
-}
 /**
 #about .section__subsubtitle{
     
@@ -74,19 +63,11 @@
         height: calc(100% - 1em);
     }
 
-    .about-me__buttons{
+    .about-me .buttons{
         grid-area: btns;
-        flex-direction: row;
-        margin-top: 3em;
     }
 
-    
-    .about-me__buttons .btn{
-        width: 7em;
-    }
-
-
-    .about-me__buttons .btn + .btn{
-        margin-top: 0em;
+    .about-me .btn{
+        padding: auto 2em;
     }
 }
