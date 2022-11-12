@@ -1,0 +1,28 @@
+/* Illustration */
+
+#illustrations .item-page-section{
+    max-width: 80%;
+}
+
+#illustrations-body .image-w-description--xlarge{
+    width: fit-content;
+    margin: 0 auto;
+   
+    height: fit-content;
+}
+
+#illustrations .image-w-description__media{
+    max-height: 80vh;
+}
+
+#illustrations-body .image-w-description--xlarge + .image-w-description--xlarge{
+    margin: 2em auto;
+}
+
+@media (min-width: 800px){
+
+
+    #illustrations-body .image-w-description--xlarge{
+    max-width: 50%;
+}
+}

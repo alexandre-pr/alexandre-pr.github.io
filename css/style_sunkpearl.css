@@ -1,0 +1,17 @@
+/* SunkPearl */
+#sunkpearl .item-page-home{
+    background-image: 
+    url(../ressources/images/Games/SunkPearl/home__sunkpearl.png);
+    background-color: black;
+    background-position: 50%;
+}
+
+#sunkpearl .item-page-intro__description
+    {
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-areas:
+        "video title" 
+        "video body";
+        column-gap: 1em;
+    }
+    

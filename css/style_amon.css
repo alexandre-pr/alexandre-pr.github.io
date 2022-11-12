@@ -6,9 +6,6 @@
     url(../ressources/images/Games/Amon/page-home__amon2.png);
 }
 
-#amon .section__subtitle{
-    padding-top: 0em;
-}
 
 
 @media (min-width: 800px){
@@ -33,4 +30,69 @@
     }
 }
 
+
+
+/* 3D */
+#amon-3d .section__subtitle{
+    text-align: center;
+}
+
+#amon-3d .images-w-description{
+    row-gap: 3em;
+}
+
+
+@media (min-width: 800px){
+    #amon-3d .section__subtitle{
+        text-align: left;
+    }
+    #amon-3d .images-w-description{
+        row-gap: 1em;
+    }
+}
+
+
+
+
+/* Tech */
+#amon-tech .image-w-description__description p{
+    display: block;
+}
+
+#amon-tech .images-w-description{
+    row-gap: 5em;
+}
+
+
+
+
+#amon-tech .section__subtitle{
+    text-align: center;
+}
+
+#amon-tech .image-w-description__description{
+    text-align: center;
+}
+
+#amon-tech .image-w-description--large .image-w-description__description{
+    text-align: center;
+}
+@media (min-width: 800px){
+    #amon-tech .images-w-description{
+        row-gap: 0em;
+    }
+
+    #amon-tech .section__subtitle{
+        text-align: left;
+    }
+    
+    #amon-tech .image-w-description__description{
+        text-align: left;
+    }
+    
+    #amon-tech .image-w-description--large .image-w-description__description{
+        text-align: left;
+    }
+
+}
 

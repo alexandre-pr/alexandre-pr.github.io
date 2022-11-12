@@ -167,7 +167,7 @@
 
     .my-work__portfolio{
        grid-template-columns:  repeat(auto-fit, minmax(50%, 1fr));
-       max-width: min(1600px, 60%);
+       max-width: min(1000px, 80%);
     }
 
     .my-work__item{

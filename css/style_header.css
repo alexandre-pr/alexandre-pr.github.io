@@ -143,6 +143,7 @@ header{
     margin: 0;
     height: 100%;
     transition: opacity 250ms cubic-bezier(.5, 0, .5, 1);
+                
 }
 
 .header__contact-btn .btn{
@@ -152,12 +153,15 @@ header{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    
+    transition: padding 250ms cubic-bezier(.5, 0, .5, 1);
+
     font-size: var(--fs-body);
 }
 
 .header__contact-btn .btn:hover{
-    transform: scaleX(1.1);
+    padding-left: 1em;
+    padding-right: 1em;
+    transform: scale(1);
 }
 
 .header--w-background .header__logos{
@@ -234,6 +238,12 @@ header{
     .header__contact-btn .btn{
         padding-right: 2em;
         padding-left: 2em;
+    }
+
+    
+    .header__contact-btn .btn:hover{
+        padding-left: 3em;
+        padding-right: 3em;
     }
 }
 

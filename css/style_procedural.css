@@ -1,0 +1,30 @@
+
+/* Mood seed */
+#procedural .item-page-home{
+    background-image: 
+    none;
+    background-color: transparent;
+    background-position: 50%;
+}
+
+
+#procedural .buttons{
+    margin-top: 3em;
+}
+
+
+
+#procedural .item-page-intro{
+    margin-top: 2em;
+}
+
+
+
+@media (min-width: 800px){
+
+#procedural .item-page-intro__description
+{
+    display: block;
+}
+}
+
