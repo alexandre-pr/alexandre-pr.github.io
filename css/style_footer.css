@@ -143,6 +143,7 @@
         margin-top: 1em;
         width: fit-content;
         font-size: var(--fs-h3);
-        padding: 3em auto;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
