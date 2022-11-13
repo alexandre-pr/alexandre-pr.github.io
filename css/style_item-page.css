@@ -129,9 +129,9 @@
 
 .item-page-intro .section__title{
     font-weight: var(--fw-reg);
-    text-align: right;
+    text-align: left;
     width: 90%;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: 0;
     
 }

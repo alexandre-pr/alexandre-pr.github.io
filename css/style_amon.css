@@ -8,6 +8,9 @@
 
 #amon .item-page-intro .section__title{
     max-width: 80%;
+    
+    margin-left: 0;
+    text-align: right;
 }
 
 
