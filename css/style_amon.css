@@ -6,6 +6,9 @@
     url(../ressources/images/Games/Amon/page-home__amon2.png);
 }
 
+#amon .item-page-intro .section__title{
+    max-width: 80%;
+}
 
 
 @media (min-width: 800px){

@@ -1,30 +1,29 @@
 
-/* Mood seed */
-#procedural .item-page-home{
-    background-image: 
-    none;
-    background-color: transparent;
-    background-position: 50%;
+
+#procedural .item-page-section{
+    max-width: 80%;
 }
 
-
-#procedural .buttons{
-    margin-top: 3em;
+#procedural-body .image-w-description--xlarge{
+    width: fit-content;
+    margin: 0 auto;
+   
+    height: fit-content;
 }
 
-
-
-#procedural .item-page-intro{
-    margin-top: 2em;
+#procedural .image-w-description__media{
+    max-height: 80vh;
 }
 
-
+#procedural-body .image-w-description--xlarge + .image-w-description--xlarge{
+    margin: 2em auto;
+}
 
 @media (min-width: 800px){
 
-#procedural .item-page-intro__description
-{
-    display: block;
+
+    #procedural-body .image-w-description--xlarge{
+    max-width: 50%;
 }
 }
 
