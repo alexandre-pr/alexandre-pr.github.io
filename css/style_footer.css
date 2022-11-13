@@ -20,10 +20,15 @@
     min-height: calc(100vh - var(--header-height))
 }
 
-.footer .btn{
+.footer .buttons{
     margin-top: 1em;
+}
+
+.footer .btn{
+    margin-top: 0em;
     width: fit-content;
     font-size: var(--fs-h2);
+    
 }
 
 .footer__content{
@@ -140,10 +145,7 @@
 
     
     .footer .btn{
-        margin-top: 1em;
         width: fit-content;
         font-size: var(--fs-h3);
-        padding-left: 1em;
-        padding-right: 1em;
     }
 }
