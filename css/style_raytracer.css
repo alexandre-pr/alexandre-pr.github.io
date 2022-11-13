@@ -1,11 +1,5 @@
 /* SunkPearl */
-#raytracer .item-page-home{
-    background-image: 
-    url(../ressources/images/Random/output5d1c.png);
-    background-color: black;
-    background-position: 50%;
-}
-
+/* 
 #raytracer .item-page-intro__description
     {
         grid-template-columns: 1.3fr 0.7fr;
@@ -13,5 +7,21 @@
         "video title" 
         "video body";
         column-gap: 1em;
-    }
+    } */
     
+#raytracer .item-page-intro__description{
+    display: block;
+}
+
+#raytracer .item-page-intro + .item-page-section{
+    padding-top: 0;
+}
+
+#raytracer .item-page-intro{
+    padding-bottom: 0;
+}
+
+#raytracer .link{
+    font-size: var(--fs-body);
+    font-family: var(--ff-primary);
+}

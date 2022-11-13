@@ -3,7 +3,7 @@
 
 .resume{
     min-height: 100vh;
-    max-width: 1200px;
+    max-width: calc(min(1000px,80%));
     margin: 0 auto;
     padding-bottom: 2em;
 }

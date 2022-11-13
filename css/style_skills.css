@@ -70,7 +70,7 @@
         "img1 img2 img3"
         "title1 title2 title3"
         "txt1 txt2 txt3";
-        column-gap: 1em;
+        column-gap: 2em;
         row-gap: 0.5em;
     }
 

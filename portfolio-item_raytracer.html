@@ -13,7 +13,7 @@
         
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style_item-page.css">
-        <link rel="stylesheet" href="css/style_sunkpearl.css">
+        <link rel="stylesheet" href="css/style_raytracer.css">
 
         <!-- Scripts -->
         <script
@@ -27,9 +27,9 @@
     <body>
         <div id="loaded_header"></div>
 
-        <div class="item-page" id="sunkpearl">
+        <div class="item-page" id="raytracer">
         <!-- Introduction -->
-        <section class="item-page-home" id="sunkpearl-home">
+        <section class="item-page-home item-page-home--small" id="thesis-home">
             <div class="item-page-home__title">
                 
                 <h1 class="item-page-home-title">Ray tracing graphics engine</h1>
@@ -37,37 +37,47 @@
                 <h3 class="section__subtitle"></h3>
             </div>
 
-            <div class="buttons">
-                <a href="#sunkpearl-intro" class="btn">Learn More</a>
-                <a href="https://github.com/alexandre-pr/MyRayTracer" class="btn"><i class="fab fa-github"></i> &nbsp; Git repository</a>
-            </div>
+            
         </section>
 
 
         <!-- Intro -->
-        <section class="item-page-intro" id="sunkpearl-intro">
+        <section class="item-page-intro" id="raytracer-intro">
             <div class="item-page-intro__description">
-                <h2 class="section__title">Inside a sunken shipwreck, help an awakened lost soul find peace.</h2>
+                <h2 class="section__title">CPU PBR parallelized Ray Tracing graphics engine</h2>
                 <!-- <img src="ressources/images/Games/Amon/Amon.png" alt="Amon holding a sheep" class="item-page-intro__img"> -->
-                <video class="item-page__video item-page-intro__video" controls poster="ressources/videos/pearl.png">
-                    <source src="ressources/videos/Pearl.mp4" type="video/mp4">
-                    <source src="ressources/videos/pearl.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>  
+                
                 <div class="item-page-intro__body">
-                    <p>Solo game project made in Unity in a week. The character animation is fully procedural. This project was my first 3d game art experience.
-                    </p>
+                    <p>Solo academic project made for the 
+                        <a class="link" target="_blank" href="https://moodle.polytechnique.fr/enrol/index.php?id=11957">INF584 - Image Synthesis</a> 
+                        course at Ecole polytechnique.</p>
+                    <ul>
+                        <li>Ambient occlusion and shadow tests accelerated using 
+                            <a class="link" target="_blank" href = https://www.cse.chalmers.se/~uffe/HighResolutionSparseVoxelDAGs.pdf>
+                            High Resolution Sparse Voxel DAGs</a></li>
+                    </ul>
                 </div>
             </div>
-            
-            <h3 class="section__subtitle" id="sunkpearl-roles">Roles</h3>
-            
-            
-            <p class="section__subsubtitle">3D Artist, Music Composer, Programmer</p>
+
+           
 
         </section>
 
-        <div class="buttons">
+        <section class="item-page-section">
+            <div class="images-w-description">
+                <div class="image-w-description image-w-description--xlarge">
+                    <div class="image-w-description__description">
+                        <h3 class="section__subtitle">Output with ambient occlusion</h3>
+                    </div>
+                    <img src="ressources/images/Random/output5d1c.png" alt="output example" class="image-w-description__media">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="buttons buttons--bottom">
+            <a href="https://github.com/alexandre-pr/svdag" target="_blank" class="btn"><i class="fab fa-github"></i> &nbsp; Git repository</a>
+            <a href="ressources/other/INF584.pdf" target="_blank" class="btn">Project report</a>
             <a href="index.html#work" class="btn">Back to my work</a>
         </div>
 
@@ -78,7 +88,6 @@
         <div id="loaded_footer"></div>
 
         <script src="js/common.js"></script>
-        <script src="js/sunkpearl.js"></script>
         <script src="js/portfolio-item.js"></script>
     </body>
 

@@ -23,17 +23,37 @@
         background-position: 90%;
     }
 
+    #amon .item-page-home .buttons{
+        margin-bottom: 2em;
+    }
+
     
     #amon .item-page-intro__img{
         max-height: 100%;
     }
 
+    #amon .images-w-description
+    {        
+        row-gap: 1em;
+    }
+
+    #amon-roles{
+        padding-top: 2em;
+    }
+/* 
     #amon .item-page-intro{
         max-width: 900px;
-    }
+    } */
 }
 
 
+#amon .images-w-description{
+    column-gap: 0;
+    row-gap: 0;
+}
+#amon-concept p{
+    font-size: var(--fs-body);
+}
 
 /* 3D */
 #amon-3d .section__subtitle{
@@ -63,7 +83,7 @@
 }
 
 #amon-tech .images-w-description{
-    row-gap: 5em;
+    row-gap: 2em;
 }
 
 

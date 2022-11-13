@@ -6,23 +6,20 @@
 
 #illustrations-body .image-w-description--xlarge{
     width: fit-content;
-    margin: 0 auto;
+    margin: auto;
    
     height: fit-content;
 }
 
 #illustrations .image-w-description__media{
-    max-height: 80vh;
-}
+    max-height: 75vh;}
 
-#illustrations-body .image-w-description--xlarge + .image-w-description--xlarge{
-    margin: 2em auto;
-}
 
 @media (min-width: 800px){
 
 
     #illustrations-body .image-w-description--xlarge{
     max-width: 50%;
-}
+    }
+
 }

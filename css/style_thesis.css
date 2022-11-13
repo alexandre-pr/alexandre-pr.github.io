@@ -1,0 +1,27 @@
+/* SunkPearl */
+/* 
+#raytracer .item-page-intro__description
+    {
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-areas:
+        "video title" 
+        "video body";
+        column-gap: 1em;
+    } */
+    
+#thesis .item-page-intro__description{
+    display: block;
+}
+
+#thesis .item-page-intro + .item-page-section{
+    padding-top: 0;
+}
+
+#thesis .item-page-intro{
+    padding-bottom: 0;
+}
+
+#thesis .link{
+    font-size: var(--fs-body);
+    font-family: var(--ff-primary);
+}
