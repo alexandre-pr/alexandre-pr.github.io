@@ -32,7 +32,7 @@
         <section class="item-page-home item-page-home--small" id="thesis-home">
             <div class="item-page-home__title">
                 
-                <h1 class="item-page-home-title">IDE Professional Master's thesis</h1>
+                <h2 class="item-page-home-title">IDE Professional Master's thesis</h2>
 
                 <h3 class="section__subtitle"></h3>
             </div>
@@ -44,42 +44,40 @@
         <!-- Intro -->
         <section class="item-page-intro" id="thesis-intro">
             <div class="item-page-intro__description">
-                <h2 class="section__title">Impact of the synchronisation of ambient visual
+                <h3 class="section__title">"Impact of the synchronisation of ambient visual
                     effects to the musical soundtrack on the
-                    player’s experience in non-realistic solo games</h2>
+                    player’s experience in non-realistic solo games"</h3>
                 <!-- <img src="ressources/images/Games/Amon/Amon.png" alt="Amon holding a sheep" class="item-page-intro__img"> -->
                 
                 <div class="item-page-intro__body">
-                    <p>Solo academic project made for the 
-                        <a class="link" target="_blank" href="https://moodle.polytechnique.fr/enrol/index.php?id=11957">INF584 - Image Synthesis</a> 
-                        course at Ecole polytechnique.</p>
+                    <p>I worked on a Professional Master's thesis for the Interactive Digital Experience (Gobelins and Cnam-Enjmin) formation under the supervision of Stephane Cugnet.
+                        This work aimed at evaluating the impact on player of the synchronization of ambient non-gameplay-related animations to the music track of a game.
+                    </p>
+                    
+                    <p>The exercise prompted an experiment, for which I made a Unity WebGL game.</p>
                     <ul>
-                        <li>Ambient occlusion and shadow tests accelerated using 
-                            <a class="link" target="_blank" href = https://www.cse.chalmers.se/~uffe/HighResolutionSparseVoxelDAGs.pdf>
-                            High Resolution Sparse Voxel DAGs</a></li>
+                        <li>Most of the ambient animations are done in shader using vertex and UV displacement.</li>
+                        <li>The syncrhonization is based upon an offline beat detection done using a <a class="link" href="https://essentia.upf.edu/index.html">Multi-Feature Beat Tracker</a>.</li>
                     </ul>
+
+                    
                 </div>
+
+                <video class="item-page__video item-page-intro__video" controls>
+                    <source src="ressources/videos/thesis.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>  
             </div>
 
            
 
         </section>
 
-        <section class="item-page-section">
-            <div class="images-w-description">
-                <div class="image-w-description image-w-description--xlarge">
-                    <div class="image-w-description__description">
-                        <h3 class="section__subtitle">Output with ambient occlusion</h3>
-                    </div>
-                    <img src="ressources/images/Random/output5d1c.png" alt="output example" class="image-w-description__media">
-                </div>
-            </div>
-        </section>
-
 
         <div class="buttons buttons--bottom">
             <!-- <a href="https://github.com/alexandre-pr/MyRayTracer" target="_blank" class="btn"><i class="fab fa-github"></i> &nbsp; Git repository</a> -->
             <a href="ressources/other/These_Pro.pdf" target="_blank" class="btn">Report</a>
+            <a href="https://alexandre-pr.github.io/hermit-web/Sync/index.html" target="_blank" class="btn">Play game</a>
             <a href="index.html#work" class="btn">Back to my work</a>
         </div>
 
@@ -91,6 +89,7 @@
 
         <script src="js/common.js"></script>
         <script src="js/portfolio-item.js"></script>
+        
     </body>
 
 
