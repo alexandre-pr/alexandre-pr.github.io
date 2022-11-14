@@ -9,6 +9,9 @@
     color: var(--clr-light);
     text-align: center;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -28,6 +31,7 @@
 
 .skills__block{
     margin-bottom: 4em;
+
 } 
 
 /**

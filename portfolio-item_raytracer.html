@@ -52,9 +52,15 @@
                         <a class="link" target="_blank" href="https://moodle.polytechnique.fr/enrol/index.php?id=11957">INF584 - Image Synthesis</a> 
                         course at Ecole polytechnique.</p>
                     <ul>
-                        <li>Ambient occlusion and shadow tests accelerated using 
-                            <a class="link" target="_blank" href = https://www.cse.chalmers.se/~uffe/HighResolutionSparseVoxelDAGs.pdf>
+                        <li>Main rays and secondary rays are computed in the polygon scene, accelerated with a bounding volume hierarchy structure.</li>
+                        <li>Shadow tests and Ambient Occlusion are computed in a voxel scene stored in a <a class="link" target="_blank" href = https://www.cse.chalmers.se/~uffe/HighResolutionSparseVoxelDAGs.pdf>
                             High Resolution Sparse Voxel DAGs</a></li>
+                            
+                        <li>Material shading is computing using the Microfacet Specular BRDF model from Unreal Engine 4
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjOpJCNu677AhVIVfEDHVDgDGcQFnoECBAQAQ&url=https%3A%2F%2Fcdn2.unrealengine.com%2FResources%2Ffiles%2F2013SiggraphPresentationsNotes-26915738.pdf&usg=AOvVaw04pV2qrGRVpeZyiTU0KPlR" class="link"></a>
+                        </li>
+                        <li>CPU parallelization using OpenMP</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -67,9 +73,26 @@
             <div class="images-w-description">
                 <div class="image-w-description image-w-description--xlarge">
                     <div class="image-w-description__description">
-                        <h3 class="section__subtitle">Output with ambient occlusion</h3>
+                        <h3 class="section__subtitle">Render</h3>
+                        <p>Full render with ray trace</p>
                     </div>
                     <img src="ressources/images/Random/output5d1c.png" alt="output example" class="image-w-description__media">
+                </div>
+
+                <div class="image-w-description image-w-description--xlarge">
+                    <div class="image-w-description__description">
+                        <h3 class="section__subtitle">Ambiant occlusion</h3>
+                        <p>Ambiant Occlusion estimation using the Sparse Voxel DAG representation</p>
+                    </div>
+                    <img src="ressources/images/Random/aobis.png" alt="output example" class="image-w-description__media">
+                </div>
+
+                <div class="image-w-description image-w-description--xlarge">
+                    <div class="image-w-description__description">
+                        <h3 class="section__subtitle">SVDAG</h3>
+                        <p>Sparse Voxel DAG representation (orthographic rendering of voxels) with a shadowing test from a directional light source.</p>
+                    </div>
+                    <img src="ressources/images/Random/svdag.png" alt="output example" class="image-w-description__media">
                 </div>
             </div>
         </section>

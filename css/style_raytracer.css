@@ -25,3 +25,38 @@
     font-size: var(--fs-body);
     font-family: var(--ff-primary);
 }
+
+#raytracer .item-page-section{
+    max-width: 80%;
+}
+
+#raytracer .image-w-description{
+    width: fit-content;
+    margin: auto;
+   
+    height: fit-content;
+}
+
+#raytracer .image-w-description__media{
+    max-height: 75vh;}
+
+
+@media (min-width: 800px){
+
+
+     
+    #raytracer .image-w-description__media{
+        max-height: 40vh;
+        }
+
+    #raytracer .image-w-description__description{
+        font-size: calc(var(--fs-body)*0.6);
+    }
+
+    #raytracer .item-page-intro{
+        width: 70%;
+        margin: auto;
+    }
+    
+
+}

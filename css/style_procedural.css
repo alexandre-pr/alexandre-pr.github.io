@@ -15,12 +15,28 @@
     max-height: 70vh;
 }
 
+#procedural .image-w-description__description p{
+    display: block;
+}
+
 
 @media (min-width: 800px){
 
 
     #procedural-body .image-w-description--xlarge{
     max-width: 50%;}
+
+    #procedural .image-w-description__media--cover{
+        width: auto;
+        height: 100%;
+        max-height: none;
+        max-width: none;
+    }
+
+    #procedural .image-w-description{
+        display: inline-flex;
+    }
+    
 
 }
 
