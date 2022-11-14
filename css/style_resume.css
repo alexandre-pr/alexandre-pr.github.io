@@ -38,12 +38,14 @@
     display: grid;
     margin-top: 2em;
     margin-bottom: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 35% 35%;
     grid-template-areas: 
     
     "title title logo"
     "date location location"
     "body body body";
+
+    width: 100%;
 }
 
 .resume__title{
@@ -102,6 +104,8 @@
     display: flex;
     flex-direction: column;
     align-items: end;   
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .resume__body{
@@ -139,16 +143,18 @@
     }
 
     .resume__item{
-        grid-template-columns: 0.7fr 1fr 1fr;
+        grid-template-columns: 30% 35% 35%;
         grid-template-areas: 
         
         "logo title title"
         "logo date location"
         "logo body body";
+
+        height: 7em;
     }
     
     .resume__logos{
-        margin-right: 2em;
+        margin-right: 1em;
     }
 
     .resume__logos img{
@@ -170,9 +176,9 @@
     .resume__block{
         display: grid;
         background:linear-gradient(var(--clr-dark),var(--clr-dark)) center/2px 100% no-repeat;
-        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-columns: 1fr;
         grid-auto-flow: column;
-        column-gap: 7em;
+        column-gap: calc(clamp(1em, 15vw - 4em, 7em));
     }
 
 }

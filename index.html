@@ -68,9 +68,16 @@
         <section class="my-work" id="work">
             <h2 class="section__title">My Work</h2>
 
-            <div class="my-work__portfolio">
+            <div class="buttons my-work__filter-buttons">
+                <div class="btn filter-btn filter-btn--active" onclick="filterSelection('all')">All</div>
+                <div class="btn filter-btn" onclick="filterSelection('filter-div--game')">Game projects</div>
+                <div class="btn filter-btn" onclick="filterSelection('filter-div--tech')">Tech/VFX</div>
+                <div class="btn filter-btn" onclick="filterSelection('filter-div--2d')">2D</div>
+            </div>
+
+            <div class="my-work__portfolio" id="work-portfolio">
             <!-- Portfolio item 01 -->
-                <a href="portfolio-item_amon.html" class="my-work__item my-work__item--full-width" id="work-amon">
+                <a href="portfolio-item_amon.html" class="my-work__item my-work__item--full-width filter-div filter-div--game filter-div--tech filter-div--2d" id="work-amon">
                     <div class="my-work__item-content">
                     <div class="my-work__item-title">
                         <h2>Amon</h2>
@@ -91,7 +98,7 @@
 
                 
             <!-- Portfolio item 05 -->
-            <a href="portfolio-item_vfx.html" class="my-work__item" id="work-vfx">
+            <a href="portfolio-item_vfx.html" class="my-work__item filter-div filter-div--tech" id="work-vfx">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>Real Time Visual Effects</h2>
@@ -139,7 +146,7 @@
              
 
             <!-- Portfolio item 03 -->
-            <a href="portfolio-item_procedural.html" class="my-work__item" id="work-procedural">
+            <a href="portfolio-item_procedural.html" class="my-work__item filter-div filter-div--tech" id="work-procedural">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>3D Procedural Art</h2>
@@ -161,7 +168,7 @@
 
             
             <!-- Portfolio item 04 -->
-            <a href="portfolio-item_sunkpearl.html" class="my-work__item" id="work-sunkpearl">
+            <a href="portfolio-item_sunkpearl.html" class="my-work__item filter-div filter-div--game filter-div--tech" id="work-sunkpearl">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>Sunk Pearl</h2>
@@ -180,7 +187,7 @@
             </a>
 
             <!-- Portfolio item 03 -->
-            <a href="portfolio-item_raytracer.html" class="my-work__item" id="work-raytracer">
+            <a href="portfolio-item_raytracer.html" class="my-work__item filter-div filter-div--tech" id="work-raytracer">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>Ray tracing graphics engine</h2>
@@ -195,7 +202,7 @@
             </a>
 
             <!-- Portfolio item 05 -->
-            <a href="portfolio-item_illustrations.html" class="my-work__item" id="work-illustrations">
+            <a href="portfolio-item_illustrations.html" class="my-work__item filter-div filter-div--2d" id="work-illustrations">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>Illustrations</h2>
@@ -214,7 +221,7 @@
 
             
 
-            <a href="portfolio-item_thesis.html" class="my-work__item" id="work-thesis">
+            <a href="portfolio-item_thesis.html" class="my-work__item filter-div filter-div--game filter-div--tech" id="work-thesis">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>Master's thesis</h2>
@@ -236,7 +243,7 @@
 
             
              <!-- Portfolio item 03 -->
-             <a href="portfolio-item_domos.html" class="my-work__item" id="work-domos">
+             <a href="portfolio-item_domos.html" class="my-work__item filter-div filter-div--game filter-div--2d" id="work-domos">
                 <div class="my-work__item-content">
                 <div class="my-work__item-title">
                     <h2>Domos</h2>
@@ -442,7 +449,7 @@
                         </div>
                         <div class="resume__date">
                             <i class="fa-solid fa-calendar-days resume__date-logo"></i>
-                            <p>2022 (4 months)</p>
+                            <p>2022 (4-month)</p>
                         </div>
                         <div class="resume__location">
                             <i class="fa-solid fa-location-dot resume__location-logo"></i>
@@ -464,7 +471,7 @@
                         </div>
                         <div class="resume__date">
                             <i class="fa-solid fa-calendar-days resume__date-logo"></i>
-                            <p>2021 (5 months)</p>
+                            <p>2021 (5-month)</p>
                         </div>
                         <div class="resume__location">
                             <i class="fa-solid fa-location-dot resume__location-logo"></i>
@@ -487,7 +494,7 @@
                         </div>
                         <div class="resume__date">
                             <i class="fa-solid fa-calendar-days resume__date-logo"></i>
-                            <p>2020 (3 months)</p>
+                            <p>2020 (3-month)</p>
                         </div>
                         <div class="resume__location">
                             <i class="fa-solid fa-location-dot resume__location-logo"></i>
@@ -510,7 +517,7 @@
                         </div>
                         <div class="resume__date">
                             <i class="fa-solid fa-calendar-days resume__date-logo"></i>
-                            <p>2018-2019 (6 months)</p>
+                            <p>2018-2019 (6-month)</p>
                         </div>
                         <div class="resume__location">
                             <i class="fa-solid fa-location-dot resume__location-logo"></i>
