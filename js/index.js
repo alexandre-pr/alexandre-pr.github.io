@@ -32,34 +32,34 @@ function HandleScrollPorftolioWork(){
         var portfolioVideo = portfolioItem.getElementsByClassName('my-work__video');
 
         
+        
+    if ((startfocus > (portfolioItem.offsetTop) && stopfocus<(portfolioItem.offsetTop + portfolioItem.offsetHeight))){
+        
         if (portfolioVideo.length>0){
-          if ((startfocus > (portfolioItem.offsetTop) && stopfocus<(portfolioItem.offsetTop + portfolioItem.offsetHeight))){
-              
-              if (portfolioVideo.length>0){
-                if (window.matchMedia("(min-width: 800px)").matches) {
-                  //portfolioVideo[0].load();
-                  if(portfolioVideo[0].readyState==0){
-                      portfolioVideo[0].load();
-                  }
-                } else {
-                  portfolioVideo[0].play();
-                }
-                
-              }
-              portfolioItem.classList.add('my-work__item--focus');
+          if (window.matchMedia("(min-width: 800px)").matches) {
+            //portfolioVideo[0].load();
+            if(portfolioVideo[0].readyState==0){
+                portfolioVideo[0].load();
+            }
+          } else {
+            portfolioVideo[0].play();
           }
-          else{
-              portfolioItem.classList.remove('my-work__item--focus');
-              if (portfolioVideo.length>0){
-                if (window.matchMedia("(min-width: 800px)").matches) {
-                  
-                } else {
-                  portfolioVideo[0].pause();
-                }
-              }
+          
+        }
+        portfolioItem.classList.add('my-work__item--focus');
+    }
+    else{
+        portfolioItem.classList.remove('my-work__item--focus');
+        if (portfolioVideo.length>0){
+          if (window.matchMedia("(min-width: 800px)").matches) {
+            
+          } else {
+            portfolioVideo[0].pause();
           }
-      }
-    });
+        }
+    }
+      
+  });
 };
 
 window.addEventListener("scroll", HandleScrollPorftolioWork, true);
