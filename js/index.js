@@ -18,47 +18,62 @@ var portfolio = document.getElementById("work-portfolio");
 animDuration=500;
 portfolio.style.animationDuration = "250ms";
 
+var portfolioItems = document.getElementsByClassName('my-work__item');
+
+// Video streaming
 
 function HandleScrollPorftolioWork(){
     var headerBlock = document.getElementsByClassName('header__logos')[0];
     
     var startfocus = window.scrollY + 0.6 * window.innerHeight;
     var stopfocus = window.scrollY + 0.4 * window.innerHeight;
-
-    /**if(headerBlock != null){
-        var top = window.scrollY + headerBlock.offsetHeight;
-        //console.log('Top: ' + top);
-        if((top > aboutBlock.offsetTop && top<skillsBlock.offsetTop)||(top>educationBlock.offsetTop)){
-            document.body.classList.add('light-background');
-        } else {
-            document.body.classList.remove('light-background');
-                }
-    }
-    **/
-
-    var portfolioItems = document.getElementsByClassName('my-work__item');
-
     //console.log('Item: ' + window.scrollY);
     Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
         var portfolioVideo = portfolioItem.getElementsByClassName('my-work__video');
 
-        if ((startfocus > (portfolioItem.offsetTop) && stopfocus<(portfolioItem.offsetTop + portfolioItem.offsetHeight))){
-            
-            if (portfolioVideo.length>0){
-                portfolioVideo[0].play();
-            }
-            portfolioItem.classList.add('my-work__item--focus');
-        }
-        else{
-            portfolioItem.classList.remove('my-work__item--focus');
-            if (portfolioVideo.length>0){
-                portfolioVideo[0].pause();
-            }
-        }
+        
+        if (portfolioVideo.length>0){
+          if ((startfocus > (portfolioItem.offsetTop) && stopfocus<(portfolioItem.offsetTop + portfolioItem.offsetHeight))){
+              
+              if (portfolioVideo.length>0){
+                if (window.matchMedia("(min-width: 800px)").matches) {
+                  //portfolioVideo[0].load();
+                  if(portfolioVideo[0].readyState==0){
+                      portfolioVideo[0].load();
+                  }
+                } else {
+                  portfolioVideo[0].play();
+                }
+                
+              }
+              portfolioItem.classList.add('my-work__item--focus');
+          }
+          else{
+              portfolioItem.classList.remove('my-work__item--focus');
+              if (portfolioVideo.length>0){
+                if (window.matchMedia("(min-width: 800px)").matches) {
+                  
+                } else {
+                  portfolioVideo[0].pause();
+                }
+              }
+          }
+      }
     });
 };
 
 window.addEventListener("scroll", HandleScrollPorftolioWork, true);
+
+
+// On hover
+Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
+  
+  var portfolioVideo = portfolioItem.getElementsByClassName('my-work__video');
+  if (portfolioVideo.length>0){
+    portfolioItem.addEventListener("mouseenter", function(event){portfolioVideo[0].play()});
+    portfolioItem.addEventListener("mouseleave", function(event){portfolioVideo[0].pause()});
+  }
+})
 
 
 // Work filter
