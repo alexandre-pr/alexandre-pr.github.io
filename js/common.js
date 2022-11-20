@@ -1,46 +1,66 @@
-$(function(){
-    $("#loaded_header").load("header.html"); 
-    $("#loaded_footer").load("footer.html"); 
-    $("#loaded_header-portfolio-item").load("portfolio-item-header.html"); 
-});
+// $(function(){
+//     $("#loaded_header").load("header.html"); 
+//     $("#loaded_footer").load("footer.html"); 
+//     $("#loaded_header-portfolio-item").load("portfolio-item-header.html"); 
+// });
 
+function HTMLImporter() {}
 
-function watchForHover() {
-    // lastTouchTime is used for ignoring emulated mousemove events
-    let lastTouchTime = 0
-  
-    function enableHover() {
-      if (new Date() - lastTouchTime < 500) return
-      document.body.classList.remove('no-hover')
+HTMLImporter.import = function (url) {
+  var error, http_request, load, script;
+
+  script =
+    document.currentScript || document.scripts[document.scripts.length - 1];
+
+  load = function (event) {
+    var attribute, index, index1, new_script, old_script, scripts, wrapper;
+
+    wrapper = document.createElement("div");
+    wrapper.innerHTML = this.responseText;
+
+    scripts = wrapper.getElementsByTagName("SCRIPT");
+
+    for (index = scripts.length - 1; index > -1; --index) {
+      old_script = scripts[index];
+
+      new_script = document.createElement("script");
+      new_script.innerHTML = old_script.innerHTML;
+
+      for (index1 = old_script.attributes.length - 1; index1 > -1; --index1) {
+        attribute = old_script.attributes[index1];
+        new_script.setAttribute(attribute.name, attribute.value);
+      }
+
+      old_script.parentNode.replaceChild(new_script, old_script);
     }
-  
-    function disableHover() {
-      document.body.classList.add('no-hover')
+
+    while (wrapper.firstChild) {
+      script.parentNode.insertBefore(
+        wrapper.removeChild(wrapper.firstChild),
+        script
+      );
     }
-  
-    function updateLastTouchTime() {
-      lastTouchTime = new Date()
-    }
-  
-    document.addEventListener('touchstart', updateLastTouchTime, true)
-    document.addEventListener('touchstart', disableHover, true)
-    document.addEventListener('mousemove', enableHover, true)
-  
-    enableHover()
-  }
-  
-watchForHover()
 
-var portfolioItems = document.getElementsByClassName('video__speed1-5');
+    script.parentNode.removeChild(script);
 
-    //console.log('Item: ' + window.scrollY);
-Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
-    portfolioItem.playbackRate = 1.5;
-});
+    this.removeEventListener("error", error);
+    this.removeEventListener("load", load);
+  };
 
-var portfolioItems = document.getElementsByClassName('video__speed2');
+  error = function (event) {
+    this.removeEventListener("error", error);
+    this.removeEventListener("load", load);
 
-    //console.log('Item: ' + window.scrollY);
-Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
-    portfolioItem.playbackRate = 2;
-});
+    alert("there was an error!");
+  };
+
+  http_request = new XMLHttpRequest();
+  http_request.addEventListener("error", error);
+  http_request.addEventListener("load", load);
+  http_request.open("GET", url);
+  http_request.send();
+};
+
+
+
+

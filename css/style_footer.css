@@ -105,8 +105,14 @@
     display:block;
 }
 
+.footer__email-input input{
+    width: 80%;
+    font-size: var(--fs-body);
+}
+
 .footer__body-input textarea{
     height: 20vh;
+    width: 80%;
 }
 
 .footer__body-prompt{
@@ -147,5 +153,14 @@
     .footer .btn{
         width: fit-content;
         font-size: var(--fs-h3);
+    }
+
+    .footer__email-input input{
+        width: 100%;
+        font-size: var(--fs-body);
+    }
+    
+    .footer__body-input textarea{
+        width: 100%;
     }
 }
