@@ -18,7 +18,6 @@ var portfolio = document.getElementById("work-portfolio");
 animDuration=500;
 portfolio.style.animationDuration = "250ms";
 
-var portfolioItems = document.getElementsByClassName('my-work__item');
 
 // Video streaming
 
@@ -28,10 +27,13 @@ function HandleScrollPorftolioWork(){
     var startfocus = window.scrollY + 0.6 * window.innerHeight;
     var stopfocus = window.scrollY + 0.4 * window.innerHeight;
     //console.log('Item: ' + window.scrollY);
+
+    var portfolioItems = document.getElementsByClassName('my-work__item');
+
     Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
         var portfolioVideo = portfolioItem.getElementsByClassName('my-work__video');
 
-        
+    
         
     if ((startfocus > (portfolioItem.offsetTop) && stopfocus<(portfolioItem.offsetTop + portfolioItem.offsetHeight))){
         
@@ -66,7 +68,7 @@ window.addEventListener("scroll", HandleScrollPorftolioWork, true);
 
 
 // On hover
-Array.prototype.forEach.call(portfolioItems, function(portfolioItem) {
+Array.prototype.forEach.call(document.getElementsByClassName('my-work__item'), function(portfolioItem) {
   
   var portfolioVideo = portfolioItem.getElementsByClassName('my-work__video');
   if (portfolioVideo.length>0){
