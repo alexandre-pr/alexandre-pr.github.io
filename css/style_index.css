@@ -1,0 +1,848 @@
+/************************** Home ******************************/
+
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100;
+    }
+  }
+
+
+/* Home */
+
+.home{
+    position: relative;
+    background-color: var(--clr-dark);
+    background-image: 
+    linear-gradient(to right, rgba(0, 54, 107, 0.9), rgba(0, 72, 138, 0.7) 45%, rgba(0, 115, 222, 0.5)),
+    url(../ressources/images/Games/Amon/home__amon--web.webp);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: var(--clr-light);
+    padding-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: calc(min(2em, 7vh - 1em));
+    
+    min-height: 100vh;
+}
+
+
+.home__education-logos-list{
+    list-style: none;
+    display: flex;
+    align-self: start;
+    align-items: center;
+    padding: 0 0 0;
+    margin: 0;
+    height: fit-content;
+    position: absolute;
+    left : 1em;
+}
+
+.home__education-logo{
+    margin: 0 0.5em 0;
+    padding: 0.5em 0 0.5em;
+    
+}
+
+.home__education-logo img {
+    height: calc(0.8 * var(--header-height));
+    
+    filter: var(--filter-white);
+    transition: filter 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+#home-cnam-logo{
+    height: calc(0.4 * var(--header-height));
+}
+
+
+.home__title{
+    padding-top: 20vh;
+    padding-left: 3%;
+    text-align: center;
+}
+
+.home__title h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.home__name{
+    font-size: 4em;
+    font-weight: var(--fw-light);
+    opacity: 0;
+    
+    animation: 1s ease-out 250ms 1 slideInFromRight;
+    animation-fill-mode: forwards;
+}
+
+
+.home__lastname{
+    font-size: 6rem;
+    font-weight: var(--fw-reg);
+    text-transform:uppercase;
+    padding-left: 0;
+    opacity: 0;
+    animation: 1s ease-out 250ms 1 slideInFromRight;
+    animation-fill-mode: forwards;
+}
+
+#home .section__subtitle{
+    padding-top: 0.2em;
+    padding-left: 0;
+    color: var(--clr-accent);
+    opacity: 0;
+    animation: 1s ease-out 400ms 1 slideInFromRight;
+    animation-fill-mode: forwards;
+}
+
+
+#home .buttons{
+    margin-bottom: clamp(0em, calc(15vh - 2em), 5em);
+}
+
+
+
+
+@media (min-width: 800px){
+    .home{
+        background-image: 
+            linear-gradient(to right, rgba(0, 34, 67, 0.9),rgba(0, 68, 137, 0.7) 25%, rgba(0, 85, 165, 0.5) 35%, rgba(0, 115, 222, 0.3) 60%, rgba(0, 115, 222, 0.05)),
+            url(../ressources/images/Games/Amon/home__amon--web.webp);
+    }
+
+    .home__name{
+        font-size: 6rem;
+    }
+
+    .home__lastname{
+        font-size: 8rem;
+        padding-left: 0.25em;
+    }
+
+    .home__left-section{
+        margin: 0;
+        padding:0;
+    }
+
+    .home__title{
+        padding-top: clamp(1em, calc(25vh - 2em) ,6em);
+        text-align: left;
+    }
+
+    #home .section__subtitle{
+    padding-left: 1em;
+    }   
+
+    .home__education-logos-list{
+        align-self: end;
+        height: fit-content;
+        position: absolute;
+        left : auto;
+    }
+
+    .home__education-logo img {
+        height: calc(1.0 * var(--header-height));
+        
+    }
+}
+
+@media (min-width: 1100px){
+    .home__title-name{
+        font-size: 8rem;
+    }
+
+    .home__title-lastname{
+        font-size: 10rem;
+    }
+}
+
+
+
+
+/****************************** Work ******************************/
+
+
+/* my work */
+
+
+.my-work{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}    
+
+.my-work .section__title::after{
+    background-color: var(--clr-light);
+}
+
+
+.my-work .section__subtitle{
+    color:var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.my-work__portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    margin: 0 auto;
+    max-width: calc(min(1000px,90%));
+    
+    padding-bottom: 2em;
+    row-gap: 0;
+
+    animation: none 0s ease-in;
+}
+
+.my-work__item{
+    background-color: var(--clr-accent-dark);
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: calc(8/7);
+}
+
+.my-work__item h2{
+    font-size: var(--fs-h2-5);
+}
+
+.my-work__item-content{
+    width: 100%;
+    height: 100%;
+}
+
+.my-work__item-title{
+    color: var(--clr-light);
+}
+
+.my-work__item-title,
+.my-work__more{
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    margin: 0em;
+    padding:1em;
+    opacity: 0;
+    overflow: hidden;
+    
+    width: 100%;
+    transform: translateX(5vw);
+    transform-origin: right;
+    transition: opacity 500ms cubic-bezier(.5, 0, .5, 1),
+                transform 500ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.my-work__more{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-reg);
+    color: var(--clr-light);
+    font-family: var(--ff-secondary);
+    text-align: right;
+    bottom: 0;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    transform: translateX(-5vw);
+    transition-delay: 150ms;
+}
+
+.my-work__item-title p{
+    font-family: var(--ff-secondary);
+    margin-left: 0em;
+    margin-top: 0.2em;
+}
+
+.my-work__medias{
+    opacity: 1;
+    transition: opacity 250ms linear;
+    height: 100%;
+    width: 100%;
+}
+
+.my-work__media{
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.my-work__img{
+    z-index: 5;
+}
+
+.my-work__video{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+.my-work__item--full-width{
+    aspect-ratio: calc(16/7);
+}
+
+.my-work__item--full-width .my-work__img{
+    object-position: 20%;
+}
+
+
+.my-work__item:focus{
+    position: relative;
+    z-index: 2;
+}
+
+.my-work__item:hover .my-work__img,
+.my-work__item:focus .my-work__img,
+.no-hover .my-work__item--focus .my-work__img{
+    /* transform: scale(1.2); */
+    opacity: 0;
+}
+
+.my-work__item:hover .my-work__medias--no-video .my-work__img,
+.my-work__item:focus .my-work__medias--no-video .my-work__img,
+.no-hover .my-work__item--focus .my-work__medias--no-video .my-work__img{
+    /* transform: scale(1.2); */
+    opacity: 1;
+}
+
+.my-work__item:hover .my-work__medias,
+.my-work__item:focus .my-work__medias,
+.no-hover .my-work__item--focus .my-work__medias{
+    opacity: 0.4;
+}
+
+.my-work__item:hover .my-work__item-title,
+.my-work__item:focus .my-work__item-title,
+.my-work__item:hover .my-work__more,
+.my-work__item:focus .my-work__more,
+.no-hover .my-work__item--focus .my-work__item-title,
+.no-hover .my-work__item--focus .my-work__more
+{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@media (min-width:600px){
+
+    .my-work__portfolio{
+       grid-template-columns:  repeat(auto-fit, minmax(50%, 1fr));
+       max-width: min(900px, 75%);
+    }
+
+    .my-work__item{
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-work__item--full-width{
+        grid-column: 1/-1;
+    }
+
+
+    .my-work__item-title,
+    .my-work__more{
+        padding: 1.5em;
+    }
+
+    .my-work__more{
+        padding-bottom: 1em;
+        padding-right: 1em;
+    }
+
+    .my-work__item-title{
+        transform: translateX(5vw);
+    }
+
+    .my-work__more{
+        transform: translateX(-5vw);
+    }
+}
+
+@media(hover:none){
+
+}
+
+
+.my-work__filter-buttons{
+    column-gap: 1em;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.filter-btn{
+    background: none;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: var(--clr-light);
+}
+
+.btn.filter-btn:hover{
+    transform: none;
+    background-color: var(--clr-light-grey) ;
+}
+
+
+.filter-btn--active{
+    background-color: var(--clr-accent);;
+}
+
+.filter-div{
+    display: none;
+
+    
+}
+
+.filter-div.filter-div--show{
+    display: unset;
+}
+
+
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/************************************   About ****************************************/
+
+
+/* About me */
+
+.about-me{
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.about-me__img-block{
+    max-width: 350px;
+    margin: 2em auto 0;
+}
+
+.about-me__img{
+    box-shadow: var(--bs);
+}
+
+.about-me .buttons{
+    margin-top: 2em;
+}
+
+/**
+#about .section__subsubtitle{
+    
+    text-align: right;
+    margin-top: 0;
+}**/
+
+@media(min-width: 600px){
+    .about-me{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-areas: 
+            "img title"
+            "img text"
+            "btns btns";
+            
+        column-gap: 2em;
+    }
+
+    #about .section__title{
+        grid-area: title;
+        align-self: center;
+        justify-self: start;
+        margin-right: 1em;
+    }
+
+    #about .section__title::after{
+        content: none;
+    }
+
+    .about-me__img-block{
+        grid-area: img;
+        align-self: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-me__img{
+        object-fit: cover;
+        margin: 0em;
+        height: calc(100% - 1em);
+    }
+
+    .about-me .buttons{
+        grid-area: btns;
+    }
+
+    .about-me .btn{
+        padding: auto 2em;
+    }
+}
+
+
+
+/*************************************************** Skills **********************************************/
+
+
+
+/* Services */
+
+.skills{
+    background-color: var(--clr-dark);
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.skills .section__title::after{
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-light);
+    opacity: 0.25;
+}
+
+.skills__title{
+    color: var(--clr-accent-light)
+}
+
+.skills__block{
+    margin-bottom: 4em;
+
+} 
+
+/**
+.skill{
+    max-width: 500px;
+    margin: 0 auto;
+}**/
+
+.skills__body p{
+    margin-bottom: 0;
+}
+
+.skills__body p + p{
+    margin-top: 0.5em;
+}
+
+.skills__logo{
+    max-height: 10vh;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1em; 
+}
+
+.skills__block .skills__body + .skills__logo {
+    margin-top: 4em;
+}
+
+#skill2 .skills__logo{
+    padding-left: 1em;
+}
+
+@media (min-width: 800px){
+    .skills__block{
+        display: grid;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "img1 img2 img3"
+        "title1 title2 title3"
+        "txt1 txt2 txt3";
+        column-gap: 2em;
+        row-gap: 0.5em;
+    }
+
+    .skills__title{
+        margin: auto;
+    }
+
+    .skills__logo{
+        margin: auto;
+    }
+
+    #skill1-title{
+        grid-area: title1;
+    }
+
+    #skill1-logo{
+        grid-area: img1;
+    }
+
+    #skill1-body {
+        grid-area: txt1;
+    }
+
+    #skill2-title{
+        grid-area: title2;
+    }
+
+    #skill2-logo{
+        grid-area: img2;
+        height: 80%;
+    }
+
+    #skill2-body{
+        grid-area: txt2;
+    }
+
+    #skill3-title{
+        grid-area: title3;
+    }
+
+    #skill3-logo{
+        grid-area: img3;
+        height: 80%;    
+    }
+
+    #skill3-body{
+        grid-area: txt3;
+    }
+
+
+/**
+    .skill + .skill{
+        margin-left: 2em;
+    }
+**/
+    .skills__logo{
+        max-width: 18vw;
+    }
+
+    .skills__block .skills__body + .skills__logo {
+        margin-top: 0em;
+    }
+}
+
+
+/****************************************************** Resume ***********************************************/
+
+
+
+/* Education */
+
+.resume{
+    min-height: 100vh;
+    max-width: calc(min(1000px,80%));
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.resume__subsection{
+    padding-top: 5em;
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume .section__title::after{
+    margin-bottom: 0.5em;
+}
+
+.resume .section__subtitle{
+    color: var(--clr-dark);
+    font-size: var(--fs-h2-5);
+}
+
+.resume .link{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.resume__block{
+    margin-top: 0em;
+}
+
+.resume__item{
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-areas: 
+    
+    "title title logo"
+    "date location none"
+    "body body body";
+
+    width: 100%;
+}
+
+.resume__title{
+    grid-area: title;
+}
+
+.resume__title h2{
+    font-size: var(--fs-h4);
+    
+}
+
+.resume__title h3{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-light);
+}
+
+.resume__body{
+    height: fit-content;
+    margin: 0;
+    display: none;
+}
+
+.resume__body p,
+.resume__body ul{
+    margin:0;
+}
+
+.resume__date{
+    grid-area: date;
+}
+
+.resume__date,
+.resume__location{
+    display: flex;
+    align-items: center;
+    column-gap: 0.3em;
+    margin-top: 0em;
+}
+
+.resume__date p,
+.resume__location p,
+.resume__date-logo,
+.resume__location-logo{
+    font-size: calc(var(--fs-body) * 0.8);
+    margin: 0
+}
+
+.resume__location{
+    grid-area: location;
+}
+
+.resume__logos{
+    padding-top: 0.4em;
+    padding-right: 0.5  em;
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: end;   
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.resume__body{
+    grid-area: body;
+}
+
+.resume__logos img{
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.resume__logos img+img{
+    margin-top: 1em;
+}
+
+#lycee-parc .resume__logos img,
+#sony .resume__logos img,
+#innerspace .resume__logos img{
+    max-height: 45px;
+    max-width: 45px;
+}
+
+.resume__date-logo,
+.resume__location-logo{
+    color: var(--clr-accent)
+}
+
+@media (min-width: 800px){
+
+    .resume__block{
+        margin-top: 4em;
+    }
+    .resume__subsection{
+        padding-top: 0em;
+    }
+
+    .resume__item{
+        grid-template-columns: 30% 35% 35%;
+        grid-template-areas: 
+        
+        "logo title title"
+        "logo date location"
+        "logo body body";
+
+        height: 7em;
+    }
+    
+    .resume__logos{
+        margin-right: 1em;
+    }
+
+    .resume__logos img{
+        max-height: 75px;
+        max-width: 75px;
+    }
+    
+    .resume__logos img+img{
+        margin-top: 1em;
+    }
+    
+    #lycee-parc .resume__logos img,
+    #sony .resume__logos img,
+    #innerspace .resume__logos img{
+        max-height: 60px;
+        max-width: 60px;
+    }
+
+    .resume__block{
+        display: grid;
+        background:linear-gradient(var(--clr-dark),var(--clr-dark)) center/2px 100% no-repeat;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        column-gap: calc(clamp(1em, 15vw - 4em, 7em));
+    }
+
+}
