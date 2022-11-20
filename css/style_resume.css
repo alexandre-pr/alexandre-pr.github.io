@@ -81,7 +81,7 @@
 .resume__location{
     display: flex;
     align-items: center;
-    column-gap: 0.3em;
+    column-gap: 0.3 em;
     margin-top: 0em;
 }
 
