@@ -346,8 +346,8 @@
         right: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
     }
 
     .item-page-section .section__subtitle{
@@ -361,6 +361,7 @@
         color: var(--clr-light);
         overflow: hidden;
         display: block;
+        max-width: 500px;
     }
     
     .image-w-description__media{
