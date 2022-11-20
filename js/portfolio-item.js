@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             //   }
             // }
   
-            video.target.load();
+            video.target.play();
             video.target.classList.remove("lazy");
             lazyVideoObserver.unobserve(video.target);
           }
