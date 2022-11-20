@@ -3,7 +3,7 @@
 
     background-image: 
     linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27)),
-    url(../ressources/images/Games/Amon/page-home__amon2.png);
+    url(../ressources/images/Games/Amon/page-home__amon2.webp);
 }
 
 #amon .item-page-intro .section__title{
@@ -19,7 +19,7 @@
     #amon .item-page-home{
         background-image: 
             linear-gradient(to right, rgba(0,133,255,.46), rgba(0,133,255,.27) 55%, rgba(0,133,255,.15)),
-            url(../ressources/images/Games/Amon/page-home__amon2.png);
+            url(../ressources/images/Games/Amon/page-home__amon2.webp);
     }
 
     #amon .item-page-home{
