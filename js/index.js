@@ -41,7 +41,7 @@ function HandleScrollPorftolioWork(){
           if (window.matchMedia("(min-width: 800px)").matches) {
             //portfolioVideo[0].load();
             if(portfolioVideo[0].readyState==0){
-                portfolioVideo[0].load();
+                //portfolioVideo[0].load();
             }
           } else {
             portfolioVideo[0].play();
