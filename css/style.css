@@ -558,7 +558,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
 }
 
 .footer__block{
@@ -652,7 +652,14 @@ header{
 
 .footer__form{
     display:block;
+    min-width: 30%;
 }
+
+.footer__email-prompt{
+    padding-bottom: 0.2em;
+    font-size: var(--fs-h4);
+}
+
 
 .footer__email-input input{
     width: 80%;
@@ -662,10 +669,13 @@ header{
 .footer__body-input textarea{
     height: 20vh;
     width: 80%;
+    font-size: var(--fs-body);
 }
 
 .footer__body-prompt{
     margin-top: 1em;
+    padding-bottom: 0.4em;
+    font-size: var(--fs-h4);
 }
 
 .section__title--contact{

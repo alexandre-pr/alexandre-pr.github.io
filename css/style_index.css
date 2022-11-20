@@ -262,7 +262,7 @@
 }
 
 .my-work__item-title p{
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     margin-left: 0em;
     margin-top: 0.2em;
 }

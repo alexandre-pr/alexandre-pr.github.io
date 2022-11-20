@@ -237,10 +237,10 @@
 
 .image-w-description{
     display: inline-flex;
-    overflow: hidden;
+    overflow: auto;
     max-width: 50%;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 /* .image-w-description:nth-of-type(2n){
