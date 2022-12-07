@@ -574,6 +574,10 @@
     margin-bottom: 1em; 
 }
 
+.skills .link{
+    font-size: var(--fs-body);
+}
+
 .skills__block .skills__body + .skills__logo {
     margin-top: 4em;
 }
