@@ -1,0 +1,58 @@
+
+
+#doi .item-page-section{
+    max-width: 80%;
+}
+
+#doi-body .image-w-description--xlarge{
+    width: fit-content;
+    margin: auto;
+   
+    height: fit-content;
+}
+
+#doi .image-w-description__media{
+    max-height: 70vh;
+}
+
+#doi .image-w-description__description p{
+    display: block;
+}
+
+#doi .item-page-intro{
+    width: 80%;
+    font-size: var(--fs-h4);
+    padding-bottom: 1em;
+}
+
+#doi .item-page-home{
+    background-image: 
+    linear-gradient(to bottom, rgba(28, 9, 0, 0.651), rgba(0, 0, 0, 0.3) 50%, rgba(163, 163, 163, 0)), url(../ressources/images/Games/DOI/doi__home.png);
+    background-color: black;
+    background-position: 50%;
+}
+
+@media (min-width: 800px){
+
+
+    #doi-body .image-w-description--xlarge{
+    max-width: 50%;}
+
+    #doi .image-w-description__media--cover{
+        width: auto;
+        height: 100%;
+        max-height: none;
+        max-width: none;
+    }
+
+    #doi .image-w-description{
+        display: inline-flex;
+    }
+
+    #doi .item-page-intro{
+        width: 60%;
+    }
+
+}
+
+
