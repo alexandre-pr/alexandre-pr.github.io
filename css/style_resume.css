@@ -123,10 +123,12 @@
 
 #lycee-parc .resume__logos img,
 #sony .resume__logos img,
+#ubisoft .resume__logos img,
 #innerspace .resume__logos img{
     max-height: 45px;
     max-width: 45px;
 }
+
 
 .resume__date-logo,
 .resume__location-logo{

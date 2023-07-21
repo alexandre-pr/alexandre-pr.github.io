@@ -796,6 +796,12 @@
     max-width: 45px;
 }
 
+
+#ubisoft .resume__logos img{
+    max-height: 55px;
+    max-width: 55px;
+}
+
 .resume__date-logo,
 .resume__location-logo{
     color: var(--clr-accent)
