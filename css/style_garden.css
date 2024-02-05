@@ -1,0 +1,58 @@
+
+
+#garden .item-page-section{
+    max-width: 80%;
+}
+
+#garden-body .image-w-description--xlarge{
+    width: fit-content;
+    margin: auto;
+   
+    height: fit-content;
+}
+
+#garden .image-w-description__media{
+    max-height: 70vh;
+}
+
+#garden .image-w-description__description p{
+    display: block;
+}
+
+#garden .item-page-intro{
+    width: 80%;
+    font-size: var(--fs-h4);
+    padding-bottom: 1em;
+}
+
+#garden .item-page-home{
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 69, 97, 0.507), rgba(0, 29, 71, 0.3) 50%, rgba(163, 163, 163, 0)), url(../ressources/images/Games/GardenTrills/garden__home.png);
+    background-color: black;
+    background-position: 50%;
+}
+
+@media (min-width: 800px){
+
+
+    #garden-body .image-w-description--xlarge{
+    max-width: 50%;}
+
+    #garden .image-w-description__media--cover{
+        width: auto;
+        height: 100%;
+        max-height: none;
+        max-width: none;
+    }
+
+    #garden .image-w-description{
+        display: inline-flex;
+    }
+
+    #garden .item-page-intro{
+        width: 60%;
+    }
+
+}
+
+
