@@ -1,0 +1,74 @@
+/* SunkPearl */
+/* 
+#raytracer .item-page-intro__description
+    {
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-areas:
+        "video title" 
+        "video body";
+        column-gap: 1em;
+    } */
+    
+    #undersea .item-page-home__title{
+        text-wrap: wrap;
+        width:100%;
+    }
+
+    #undersea h1{
+        font-size: 3rem;
+    }
+
+    #undersea .item-page-intro__description{
+        display: block;
+    }
+    
+    #undersea .item-page-intro + .item-page-section{
+        padding-top: 0;
+    }
+    
+    #undersea .item-page-intro{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    #undersea .link{
+        font-size: var(--fs-body);
+        font-family: var(--ff-primary);
+    }
+    
+    #undersea .item-page-section{
+        max-width: 60%;
+    }
+    
+    #undersea .image-w-description{
+        width: fit-content;
+        margin: auto;
+       
+        height: fit-content;
+    }
+    
+    #undersea .image-w-description__media{
+        max-height: 75vh;}
+    
+    
+    @media (min-width: 800px){
+    
+        #undersea h1{
+            font-size: inherit;
+        }
+         
+        #undersea .image-w-description__media{
+            max-height: 40vh;
+            }
+    
+        #undersea .image-w-description__description{
+            font-size: calc(var(--fs-body)*0.6);
+        }
+    
+        #undersea .item-page-intro{
+            width: 70%;
+            margin: auto;
+        }
+        
+    
+    }

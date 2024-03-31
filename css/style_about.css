@@ -69,5 +69,6 @@
 
     .about-me .btn{
         padding: auto 2em;
+        margin: auto;
     }
 }

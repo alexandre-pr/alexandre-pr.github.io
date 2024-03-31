@@ -510,7 +510,9 @@
     }
 
     .about-me .btn{
-        padding: auto 2em;
+        margin: auto;
+        padding: 15px 30px;
+        height: auto;
     }
 }
 
