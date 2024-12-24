@@ -687,6 +687,11 @@ header{
     background-color: white;
 }
 
+.yt-frame{
+    width: 350px;
+    height:200px;
+}
+
 @media (min-width: 800px){
 
     .footer__content{
@@ -721,5 +726,10 @@ header{
     
     .footer__body-input textarea{
         width: 100%;
+    }
+
+    .yt-frame{
+        width: 850px;
+        height:500px;
     }
 }
